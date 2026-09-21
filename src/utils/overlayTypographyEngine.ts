@@ -196,27 +196,41 @@ export function computeOverlayTypography(
 
     if (isDuplicateScripture) {
       // Clean 2-tier overlay (No duplicate Line 2, Clean Reference without emoji/brackets)
-      return `SUBTITLE / TEXT OVERLAY DIRECTIVE (ENGLISH):
-- FONT STYLE, SIZE & COLOR: The video generation tool or render engine is FREELY PERMITTED to choose the font family, font style, font size, font color, drop shadow, and typography styling best suited for the 3D animated visual aesthetic.
-- MANDATORY PLACEMENT & SAFE ZONE POSITION (MAINTAIN AS IS):
+      return `[SUBTITLE OVERLAY TYPOGRAPHY DIRECTIVE - CORRECTED FOR YOUTUBE SHORTS SAFE ZONE]:
+
+- FONT: Engine is FREELY PERMITTED to choose font family, size, color, shadow best suited for 3D Pixar aesthetic. Use bold, high-contrast white/gold with soft drop shadow + stroke for readability.
+
+- MANDATORY PLACEMENT & SAFE ZONE - CENTER-UPPER (YouTube Shorts Compliant):
     * Horizontal Safe Margin: 160px left & right padding (760px safe width centered at x=540).
-    * Vertical Placement: Lifted into center safe band (y=900 to y=1300 MAX). Text MUST NOT enter the bottom 350px (protected from YouTube Shorts UI buttons, title, and channel info).
+    * Vertical Placement: STRICTLY CENTER-UPPER SAFE BAND y=450 to y=850 MAX from top.
+    * FORBIDDEN ZONE: Text MUST NEVER enter the bottom 600px of the 1920px frame (y=1320 to y=1920). This bottom zone is RESERVED for YouTube Shorts UI - title, description, channel info, like/subscribe buttons.
+    * Justification: Centered horizontally, centered vertically in upper half, well above main character action.
+    * Safe Zone Enforcement: If tool attempts to place text low, force upward correction to y=650 center.
+
 - EXACT TEXT OVERLAY CONTENT:
-    * Primary Affirmation Text: ${affirmationLinesJson}
-    * Scripture Reference Text: "${cleanRef}"
-- Final Video Output: H.264 MP4 (1080x1920 9:16 vertical portrait, CRF 18, yuv420p, FORBID mp4v).`;
+    * Line 1: ${rawAffirmation}
+    * Line 2 (smaller): "${cleanRef}"
+
+- Final Output: H.264 MP4 1080x1920 9:16, CRF 18, yuv420p.`;
     }
 
-    return `SUBTITLE / TEXT OVERLAY DIRECTIVE (ENGLISH):
-- FONT STYLE, SIZE & COLOR: The video generation tool or render engine is FREELY PERMITTED to choose the font family, font style, font size, font color, drop shadow, and typography styling best suited for the 3D animated visual aesthetic.
-- MANDATORY PLACEMENT & SAFE ZONE POSITION (MAINTAIN AS IS):
+    return `[SUBTITLE OVERLAY TYPOGRAPHY DIRECTIVE - CORRECTED FOR YOUTUBE SHORTS SAFE ZONE]:
+
+- FONT: Engine is FREELY PERMITTED to choose font family, size, color, shadow best suited for 3D Pixar aesthetic. Use bold, high-contrast white/gold with soft drop shadow + stroke for readability.
+
+- MANDATORY PLACEMENT & SAFE ZONE - CENTER-UPPER (YouTube Shorts Compliant):
     * Horizontal Safe Margin: 160px left & right padding (760px safe width centered at x=540).
-    * Vertical Placement: Lifted into center safe band (y=900 to y=1300 MAX). Text MUST NOT enter the bottom 350px (protected from YouTube Shorts UI buttons, title, and channel info).
+    * Vertical Placement: STRICTLY CENTER-UPPER SAFE BAND y=450 to y=850 MAX from top.
+    * FORBIDDEN ZONE: Text MUST NEVER enter the bottom 600px of the 1920px frame (y=1320 to y=1920). This bottom zone is RESERVED for YouTube Shorts UI - title, description, channel info, like/subscribe buttons.
+    * Justification: Centered horizontally, centered vertically in upper half, well above main character action.
+    * Safe Zone Enforcement: If tool attempts to place text low, force upward correction to y=650 center.
+
 - EXACT TEXT OVERLAY CONTENT:
-    * Line 1 Affirmation Text: ${affirmationLinesJson}
-    * Line 2 Scripture Verse Text: "${rawScripture}"
-    * Line 3 Scripture Reference Text: "${cleanRef}"
-- Final Video Output: H.264 MP4 (1080x1920 9:16 vertical portrait, CRF 18, yuv420p, FORBID mp4v).`;
+    * Line 1: ${rawAffirmation}
+    * Line 2: "${rawScripture}"
+    * Line 3 (smaller): "${cleanRef}"
+
+- Final Output: H.264 MP4 1080x1920 9:16, CRF 18, yuv420p.`;
   };
 
   let promptAdditionDirective: string;

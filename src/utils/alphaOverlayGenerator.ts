@@ -72,7 +72,7 @@ export async function generateAlphaOverlayBlob(blueprint: ShortsBlueprint): Prom
   };
 
   const maxWidth = 760; // Strict YouTube Shorts safe width (160px padding on left & right to prevent UI overlay/edge clipping)
-  const centerY = 960;  // 50% vertical safe zone
+  const centerY = 650;  // Center-Upper Safe Band (y=450 to y=850, y=650 center) safe from bottom 600px Shorts UI occlusion
 
   // 2px shadow (0,0,0,180) for high legibility over animation
   ctx.shadowColor = 'rgba(0, 0, 0, 0.706)';
