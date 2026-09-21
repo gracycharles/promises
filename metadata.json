@@ -1,0 +1,8 @@
+{
+  "name": "Christian Affirmations Shorts Character & Prompt Studio",
+  "description": "Characterization and prompt engineering studio for 50 joyful, hopeful, and comical Christian affirmation YouTube Shorts spanning cartoon, comic, 3D animated, and whimsical characters for all ages from kids to elderly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
