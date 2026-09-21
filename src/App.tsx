@@ -535,7 +535,7 @@ export default function App() {
             <span>(@ChristianAffirmationsShorts)</span>
           </p>
           <p className="text-stone-500 font-mono">
-            50 Bible-Based Hope Affirmations • Animated Characters • British Young Female Voice • Kids to Elderly
+            50 Bible-Based Hope Affirmations • Animated Characters • Character-Matched Voice • Kids to Elderly
           </p>
         </div>
       </footer>
