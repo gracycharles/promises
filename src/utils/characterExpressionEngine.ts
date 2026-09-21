@@ -21,11 +21,11 @@ interface CuratedExpression {
 }
 
 const CURATED_EXPRESSIONS: Record<number, CuratedExpression> = {
-  1: { // அப்பா பிதாவே ஸ்தோத்திரம் (ரோம. 8:15)
-    expression: "Radiant, affectionate gaze gazing upward with profound childlike trust and serene gratitude; soft, peaceful brow; gentle, heartfelt smile of filial adoration.",
-    gesturePosture: "Right hand pressed firmly over coarse-weave linen tunic above his heart; humble, reverent upward tilt of the chin in intimate prayer.",
-    theologicalMood: "Intimate filial adoration and spiritual adoption as a child of God, resting safely in the Father's tender love.",
-    sceneAtmosphere: "Golden dawn sunlight beams through ancient Jerusalem limestone arches, dust motes suspended in peaceful stillness."
+  1: { // Short #1 - Barnaby the Bumbling Bumblebee (Philippians 4:13)
+    expression: "Confident, cheerful, extremely cute and determined expression with wide bright sparkling dry eyes (STRICTLY NO TEARS, NO CRYING, NO WATERY EYES, NO SADNESS OR STRAINING GRIMACE); funny superhero grin and playful confident wink.",
+    gesturePosture: "Flexing tiny fuzzy bumblebee arms with comical superhero swagger, proudly lifting the giant strawberry overhead with joyful triumph.",
+    theologicalMood: "Unstoppable divine confidence and joyful empowerment through Christ who strengthens us.",
+    sceneAtmosphere: "Vibrant sun-drenched flower garden with giant dew-covered clover leaves under brilliant morning sunlight."
   },
   2: { // அன்பின் பிதாவே ஸ்தோத்திரம் (1 யோவா. 3:1)
     expression: "Warm, radiant countenance with a serene and tender smile; crinkled eyes shining with boundless joy and deep affection.",
@@ -306,7 +306,7 @@ Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Stud
 
 [CHARACTERS & MULTI-CHARACTER EXPRESSIVE ACTING]:
 - Main Hero Character: ${blueprint.character}. Lovable, highly appealing, cartoony character with expressive oversized sparkling eyes, soft fluffy textures, and vibrant costume details.
-- Micro-Expressions & Posture: ${expr.expression}. ${expr.gesturePosture}.
+- Facial Expression Directive (STRICT): ${expr.expression}. ${expr.gesturePosture}. (EXPLICIT SAFETY MANDATE: STRICTLY NO TEARS, NO CRYING, NO WATERY EYES, NO SADNESS OR GRIMACE; character eyes MUST be dry, bright, wide, and sparkling with joyful determination!).
 - Multi-Character Comedic Interaction: ${comical}. Whimsical animated companions and friendly sidekicks cheer, tumble, and celebrate alongside in endearing, slapstick cartoon joy!
 
 [SCENE, SETTING & EYE-POPPING VIVID COLOR PALETTE]:
