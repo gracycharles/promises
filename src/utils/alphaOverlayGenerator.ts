@@ -1,5 +1,5 @@
 import { ShortsBlueprint } from '../types';
-import { computeOverlayTypography, cleanScriptureRef } from './overlayTypographyEngine';
+import { computeOverlayTypography, cleanScriptureRef, isDuplicateOrOverlappingScripture } from './overlayTypographyEngine';
 
 /**
  * Generates a true 1080x1920 alpha text overlay PNG with exact typography,
@@ -20,10 +20,8 @@ export async function generateAlphaOverlayBlob(blueprint: ShortsBlueprint): Prom
   const rawLine3 = (blueprint.subtitles.line3Ref || blueprint.scriptureRef || blueprint.englishRef || '').trim();
   const cleanRef = cleanScriptureRef(rawLine3);
 
-  // Check duplicate line 2 vs line 1
-  const norm1 = line1Affirmation.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const norm2 = rawLine2.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const hasDistinctLine2 = norm2.length > 0 && norm2 !== norm1;
+  // Check duplicate/overlapping line 2 vs line 1
+  const hasDistinctLine2 = !isDuplicateOrOverlappingScripture(line1Affirmation, rawLine2);
   const line2Scripture = hasDistinctLine2 ? rawLine2 : '';
 
   const typo = computeOverlayTypography(

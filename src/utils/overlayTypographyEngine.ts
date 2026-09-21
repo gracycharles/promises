@@ -71,6 +71,34 @@ export function cleanScriptureRef(ref: string = ''): string {
 }
 
 /**
+ * Checks if Line 2 (Scripture verse) is identical to or heavily overlaps with Line 1 (Affirmation text).
+ * Prevents rendering duplicate overlay text on screen.
+ */
+export function isDuplicateOrOverlappingScripture(line1Affirmation: string = '', line2Scripture: string = ''): boolean {
+  const norm1 = line1Affirmation.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const norm2 = line2Scripture.replace(/^["']|["']$/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  if (norm2.length === 0) return true;
+  if (norm1 === norm2) return true;
+
+  // Substring check
+  if (norm1.includes(norm2) || norm2.includes(norm1)) return true;
+
+  // Word set overlap check (> 40% matching words)
+  const words1 = new Set(line1Affirmation.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean));
+  const words2 = line2Scripture.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
+
+  if (words2.length > 0) {
+    const matchingCount = words2.filter(w => words1.has(w)).length;
+    if (matchingCount / words2.length >= 0.4) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+/**
  * Computes overlay typography metrics based on Affirmation, Scripture Verse, and Reference strings.
  */
 export function computeOverlayTypography(
@@ -82,10 +110,8 @@ export function computeOverlayTypography(
   const rawAffirmation = line1Affirmation.trim();
   const rawScripture = line2Scripture.replace(/^["']|["']$/g, '').trim();
 
-  // Normalize to check if Line 2 scripture duplicates Line 1 affirmation
-  const normAff = rawAffirmation.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const normScr = rawScripture.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const isDuplicateScripture = normScr.length === 0 || normScr === normAff;
+  // Normalize to check if Line 2 scripture duplicates or heavily overlaps Line 1 affirmation
+  const isDuplicateScripture = isDuplicateOrOverlappingScripture(rawAffirmation, rawScripture);
 
   const affirmationCharCount = rawAffirmation.length;
   const scriptureCharCount = isDuplicateScripture ? 0 : rawScripture.length;
@@ -198,7 +224,7 @@ export function computeOverlayTypography(
       // Clean 2-tier overlay (No duplicate Line 2, Clean Reference without emoji/brackets)
       return `[SUBTITLE OVERLAY TYPOGRAPHY DIRECTIVE - CORRECTED FOR YOUTUBE SHORTS SAFE ZONE]:
 
-- FONT: Engine is FREELY PERMITTED to choose font family, size, color, shadow best suited for 3D Pixar aesthetic. Use bold, high-contrast white/gold with soft drop shadow + stroke for readability.
+- FONT & STYLING (FULL CREATIVE FREEDOM): The video generation tool or render engine is FREELY PERMITTED and ENCOURAGED to select the most stylish, aesthetically pleasing font family, font size, font color, drop shadow, outline, and typography treatment that perfectly harmonizes with the visual content, mood, and 3D animation style. High-contrast bold styling with legibility strokes/shadows is recommended.
 
 - MANDATORY PLACEMENT & SAFE ZONE - CENTER-UPPER (YouTube Shorts Compliant):
     * Horizontal Safe Margin: 160px left & right padding (760px safe width centered at x=540).
@@ -216,7 +242,7 @@ export function computeOverlayTypography(
 
     return `[SUBTITLE OVERLAY TYPOGRAPHY DIRECTIVE - CORRECTED FOR YOUTUBE SHORTS SAFE ZONE]:
 
-- FONT: Engine is FREELY PERMITTED to choose font family, size, color, shadow best suited for 3D Pixar aesthetic. Use bold, high-contrast white/gold with soft drop shadow + stroke for readability.
+- FONT & STYLING (FULL CREATIVE FREEDOM): The video generation tool or render engine is FREELY PERMITTED and ENCOURAGED to select the most stylish, aesthetically pleasing font family, font size, font color, drop shadow, outline, and typography treatment that perfectly harmonizes with the visual content, mood, and 3D animation style. High-contrast bold styling with legibility strokes/shadows is recommended.
 
 - MANDATORY PLACEMENT & SAFE ZONE - CENTER-UPPER (YouTube Shorts Compliant):
     * Horizontal Safe Margin: 160px left & right padding (760px safe width centered at x=540).

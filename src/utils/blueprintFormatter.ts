@@ -41,6 +41,11 @@ export function formatVideoGenerationOnlyText(b: ShortsBlueprint): string {
   return `🎬 HOLLYWOOD CREATION RANGE 3D MASTER PROMPT (SHORT #${b.id}: ${title})
 Target Duration: 10.0 Seconds | Format: 9:16 Vertical Portrait (1080x1920) | Output: Full-Bleed 60fps
 
+[COMPULSORY TRI-OUTPUT MANDATE FOR ALL GENERATED VIDEOS - NO MISTAKES PERMITTED]:
+- COMPULSORY 1 (VIDEO): 3D Animated Video Generation (9:16 portrait, full-bleed 60fps, 3D Pixar character acting, vivid lighting, zero tears).
+- COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (British young female voice reading the exact 10.0s spoken script + background music bed).
+- COMPULSORY 3 (TEXT OVERLAY): Burned-In Subtitle Text Overlay (Center-upper safe band y=450-850, high-contrast stylish typography, 100% clear of bottom 600px Shorts UI).
+
 [MASTER AI VIDEO GENERATION PROMPT - PASTE INTO RUNWAY GEN-3 / KLING / LUMA / SORA]:
 ${b.videoPrompt}
 
@@ -48,9 +53,9 @@ ${b.videoPrompt}
 - Main Character: ${b.character} (${b.characterStyle || '3D Pixar Animation'})
 - Character Name: ${b.characterName || b.character || 'Animated Hero'}
 - Comedic Element: ${b.comicalElement}
-${expr ? `- Expression & Posture: ${expr.expression} ${expr.gesturePosture}\n- Mood & Atmosphere: ${expr.theologicalMood}. ${expr.sceneAtmosphere}` : ''}
+${expr ? `- Character Acting Nuance: ${expr.expression}\n- Scene Atmosphere: ${expr.sceneAtmosphere}` : ''}
 
-[EXTERNAL AI VOICE & NARRATION DIRECTIVE (BRITISH YOUNG FEMALE VOICE)]:
+[EXTERNAL AI VOICE & NARRATION DIRECTIVE (CHARACTER-MATCHED VOICE)]:
 - Voice Profile: ${b.voiceProfile || voiceDir.voiceProfileDirective}
 - Vocal Persona: ${voiceDir.vocalTone}
 - Witty Nuance: ${voiceDir.wittyComedicNuance}
@@ -60,7 +65,6 @@ ${expr ? `- Expression & Posture: ${expr.expression} ${expr.gesturePosture}\n- M
 [MIDJOURNEY v6 KEYFRAME BASE FRAME PROMPT]:
 ${formatMidjourneyPrompt(b)}
 
-[SUBTITLE OVERLAY TYPOGRAPHY DIRECTIVE]:
 ${typo.promptAdditionDirective}`;
 }
 
@@ -91,7 +95,9 @@ export function formatVideoPromptOnlyText(b: ShortsBlueprint): string {
   const line3Ref = b.subtitles?.line3Ref || b.scriptureRef || b.englishRef || '';
   const typo = computeOverlayTypography(line1Affirmation, line2Scripture, line3Ref);
 
-  return `🎥 SIMULTANEOUS VIDEO & AUDIO GENERATION PROMPT (9:16 VERTICAL - PORTRAIT 1080x1920):
+  return `🎥 COMPULSORY TRI-OUTPUT VIDEO GENERATION PROMPT (9:16 VERTICAL - PORTRAIT 1080x1920):
+[COMPULSORY MANDATE: Output MUST include Video Animation + Synchronized British Female Voice Audio + Burned-In Safe-Zone Subtitle Text Overlay]
+
 ${b.videoPrompt}
 
 ${typo.promptAdditionDirective}`;
@@ -102,13 +108,13 @@ ${typo.promptAdditionDirective}`;
  */
 export function formatAudioOnlyText(b: ShortsBlueprint): string {
   const dir = buildCharacterVoiceDirection(b);
-  return `🎙 CHARACTER-TAILORED AUDIO & VOICEOVER PROMPT (BRITISH YOUNG FEMALE VOICE):
+  return `🎙 CHARACTER-TAILORED AUDIO & VOICEOVER PROMPT:
 - Character: ${dir.characterName}
 - Vocal Persona & Nuance: ${dir.vocalTone}
 - Narration Style: ${dir.narrationStyle}
-- Voice Profile Directive: ${b.voiceProfile || dir.voiceProfileDirective}
+- Voice Profile Directive: ${dir.voiceProfileDirective}
 - Scripted Spoken Narration (Strictly 10.0s): "${b.audioScript || dir.audioNarrationScript}"
-- CRITICAL DIRECTIVE: Read ONLY the exact scripted text above in British young female voice with warm, witty, joyful, and articulate cadence. Zero unscripted words, no intro/outro, no background theological commentary.
+- CRITICAL DIRECTIVE: Read ONLY the exact scripted text above in a clear, articulate, character-matched voice (male, female, or child). Zero unscripted words, no intro/outro, no commentary.
 - Background Audio: ${b.backgroundAudio}
 
 🎧 ELEVENLABS / AI VOICE SYNTHESIS DIRECTIVE:

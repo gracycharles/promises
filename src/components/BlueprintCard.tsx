@@ -37,7 +37,7 @@ import {
   getCharacterExpressionText
 } from '../utils/blueprintFormatter';
 import { getScriptureVerification } from '../data/scriptureVerifications';
-import { computeOverlayTypography, cleanScriptureRef } from '../utils/overlayTypographyEngine';
+import { computeOverlayTypography, cleanScriptureRef, isDuplicateOrOverlappingScripture } from '../utils/overlayTypographyEngine';
 import { downloadAlphaOverlayPng } from '../utils/alphaOverlayGenerator';
 import { buildCharacterVoiceDirection } from '../utils/narrationEngine';
 import { formatMidjourneyPrompt } from '../utils/blueprintFormatter';
@@ -97,9 +97,8 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
   const rawLine3 = blueprint.subtitles?.line3Ref || blueprint.scriptureRef || blueprint.englishRef || '';
   const cleanRef = useMemo(() => cleanScriptureRef(rawLine3), [rawLine3]);
 
-  const norm1 = line1Affirmation.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const norm2 = rawLine2.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const line2Scripture = (norm2.length > 0 && norm2 !== norm1) ? rawLine2 : '';
+  const isDuplicate = isDuplicateOrOverlappingScripture(line1Affirmation, rawLine2);
+  const line2Scripture = !isDuplicate ? rawLine2 : '';
   const line3Ref = cleanRef;
 
   const typo = useMemo(() => computeOverlayTypography(
