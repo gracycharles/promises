@@ -929,13 +929,13 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
               <div className="p-3 rounded-lg bg-stone-900/50 border border-stone-800/80 space-y-2">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="text-stone-400 font-mono text-[10px] uppercase font-bold tracking-wider">
-                    Description (Affirmation + NKJV Scripture + Personal Prayer):
+                    Description (Scripture Verse + 2-Liner Text):
                   </span>
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => copyToClipboard(formattedDescription, 'seo-description')}
                       className="flex items-center gap-1 px-2.5 py-1 rounded bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-[11px] font-semibold transition-all shadow-sm"
-                      title="Copy 3-part description (Affirmation, NKJV scripture verse, personal prayer)"
+                      title="Copy description (Scripture verse + 2-liner text expressing God's word)"
                     >
                       {copiedSection === 'seo-description' ? (
                         <>

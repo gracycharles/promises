@@ -1,6 +1,6 @@
 import { ShortsBlueprint, PraiseItem } from '../types';
 import { generateCharacterExpression, buildInculcatedVideoPrompt } from './characterExpressionEngine';
-import { computeOverlayTypography } from './overlayTypographyEngine';
+import { computeOverlayTypography, cleanScriptureRef } from './overlayTypographyEngine';
 import { buildCharacterVoiceDirection } from './narrationEngine';
 
 /**
@@ -147,22 +147,41 @@ Atmosphere: ${expr.sceneAtmosphere}`;
 }
 
 /**
- * Structured 3-part YouTube Description: Affirmation, NKJV Scripture Verse, Personal Affirmation
+ * Formats YouTube / Copy Description containing strictly:
+ * 1. Scripture verse with clean reference
+ * 2. 2-liner text expressing God's word associated with the content
+ * Nothing more.
  */
-export function getFormattedYouTubeDescription(b: ShortsBlueprint | PraiseItem | { id: number; affirmationTitle?: string; scriptureRef?: string; scriptureVerse?: string; affirmationText?: string }): string {
-  if ('seo' in b && b.seo?.description) {
-    return b.seo.description;
+export function getFormattedYouTubeDescription(b: ShortsBlueprint | PraiseItem | { id?: number; affirmationTitle?: string; scriptureRef?: string; scriptureVerse?: string; affirmationText?: string; englishText?: string; nkjvText?: string }): string {
+  const verse = ('scriptureVerse' in b && b.scriptureVerse ? b.scriptureVerse : '') || 
+                ('nkjvText' in b && b.nkjvText ? b.nkjvText : '') || '';
+  
+  const rawRef = ('scriptureRef' in b && b.scriptureRef ? b.scriptureRef : '') || 
+                 ('englishRef' in b && (b as any).englishRef ? (b as any).englishRef : '') || '';
+  const ref = cleanScriptureRef(rawRef);
+
+  const rawText = ('affirmationText' in b && b.affirmationText ? b.affirmationText : '') || 
+                  ('englishText' in b && (b as any).englishText ? (b as any).englishText : '') || 
+                  ('affirmationTitle' in b && b.affirmationTitle ? b.affirmationTitle : '') || '';
+
+  // Clean Verse Line
+  const verseLine = verse ? `"${verse.trim()}" — ${ref}` : ref;
+
+  // Clean 2-liner text expressing God's word
+  let textLines = rawText.trim();
+  if (textLines && !textLines.includes('\n')) {
+    const clauses = textLines.split(/(?<=[,.!?;])\s+/);
+    if (clauses.length === 2) {
+      textLines = `${clauses[0]}\n${clauses[1]}`;
+    } else if (clauses.length > 2) {
+      const mid = Math.ceil(clauses.length / 2);
+      textLines = `${clauses.slice(0, mid).join(' ')}\n${clauses.slice(mid).join(' ')}`;
+    }
   }
-  const id = b.id;
-  const title = ('affirmationTitle' in b ? b.affirmationTitle : '') || `Christian Affirmation #${id}`;
-  const ref = ('scriptureRef' in b ? b.scriptureRef : '') || 'Holy Scripture';
-  const verse = ('scriptureVerse' in b ? b.scriptureVerse : '') || '';
-  const text = ('affirmationText' in b ? b.affirmationText : '') || '';
 
   const parts = [
-    `✨ ${title} (${ref})`,
-    verse ? `📖 "${verse}" — ${ref} (NKJV)` : '',
-    text ? `🙏 Daily Affirmation: ${text}` : ''
+    verseLine,
+    textLines
   ].filter(Boolean);
 
   return parts.join('\n\n');

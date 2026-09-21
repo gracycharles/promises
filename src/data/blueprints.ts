@@ -4,6 +4,7 @@ import { enrichBlueprintWithVerification } from './scriptureVerifications';
 import { generateCharacterExpression, buildInculcatedVideoPrompt } from '../utils/characterExpressionEngine';
 import { buildCharacterVoiceDirection } from '../utils/narrationEngine';
 import { cleanScriptureRef } from '../utils/overlayTypographyEngine';
+import { getFormattedYouTubeDescription } from '../utils/blueprintFormatter';
 
 const RAW_BLUEPRINTS: ShortsBlueprint[] = ALL_50_AFFIRMATIONS_BLUEPRINTS;
 
@@ -78,7 +79,7 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
     seo: {
       ...raw.seo,
       title: raw.seo?.title || `Short #${raw.id} | ${title} | ${ref} | Christian Affirmations`,
-      description: raw.seo?.description || `Daily Christian Affirmation #${raw.id}: '${text}' (${ref}). Hope-filled, positive, and joyful animation for all ages from kids to elderly. Subscribe for daily Bible encouragement!`,
+      description: getFormattedYouTubeDescription({ scriptureVerse: verse, scriptureRef: ref, affirmationText: text }),
       tags: mergedTags
     }
   };
