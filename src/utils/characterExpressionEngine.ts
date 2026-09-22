@@ -95,19 +95,19 @@ const CURATED_EXPRESSIONS: Record<number, CuratedExpression> = {
     sceneAtmosphere: "Ancient stone library alcove in Babylon/Jerusalem, candlelight flickering across worn stone walls and scrolls."
   },
   31: { // தமது வசனத்தை அனுப்பி குணமாக்குகிறார் (சங். 107:20)
-    expression: "Tearful relief of healing; eyes that once bore pain now glowing with vitality and stunned gratefulness; tremulous smile.",
+    expression: "Deep, radiant relief of healing; eyes wide and completely dry, glowing with vitality and stunned gratefulness; bright joyful smile.",
     gesturePosture: "Looking down at hands once withered or trembling, now steady; pressing both hands to cheeks in thankful wonder.",
     theologicalMood: "Personal physical and spiritual healing by the sent Word of the Lord, redeemed from destruction.",
     sceneAtmosphere: "Sunlit stone domestic room in Capernaum, warm light streaming through a clay-brick window onto the restored character."
   },
   32: { // அவர் அக்கிரமங்களை மன்னிக்கிறவர் (சங். 103:3)
-    expression: "Overwhelming tears of contrition giving way to unburdened peace; brow unwinding from guilt; deeply relieved countenance.",
-    gesturePosture: "Head deeply bowed to the ground, then slowly lifting face toward the sky as heavy spiritual burden lifts.",
+    expression: "Profound joyful peace; brow completely relaxed and eyes dry and clear, reflecting unburdened freedom and deeply relieved countenance.",
+    gesturePosture: "Head gently bowed, then slowly lifting face toward the sky with a warm smile as heavy spiritual burden lifts.",
     theologicalMood: "The liberation of divine forgiveness: all sins washed white as snow, restored to communion with God.",
     sceneAtmosphere: "Quiet corner of the Temple Mount, soft shadows meeting morning sunlight, symbolic of darkness banished by grace."
   },
   33: { // அவர் நோய்களையெல்லாம் குணமாக்குகிறவர் (சங். 103:3)
-    expression: "Ecstatic yet reverent joy; tears streaming down radiant cheeks; wide eyes witnessing one's own miraculous restoration.",
+    expression: "Ecstatic yet reverent joy; eyes bright, dry, and sparkling with radiant happiness; wide eyes witnessing one's own miraculous restoration.",
     gesturePosture: "Standing on feet with full balance, lifting palms toward heaven, taking a deep, unrestricted breath of vitality.",
     theologicalMood: "Wholehearted thanksgiving to Jehovah Rapha who heals all our diseases and redeems life from the pit.",
     sceneAtmosphere: "Pool of Bethesda stone colonnade, sunlight breaking through the colonnades upon a leaping, thankful believer."
@@ -119,7 +119,7 @@ const CURATED_EXPRESSIONS: Record<number, CuratedExpression> = {
     sceneAtmosphere: "Solitary stone study room illuminated by warm olive-oil lamp light, tranquility of evening stillness."
   },
   69: { // ஆறுதலின் தேவனே ஸ்தோத்திரம் (ரோம. 15:5)
-    expression: "Face streaked with dried tears of grief, now blossoming with unexpected deep consolation; gentle, comforting smile.",
+    expression: "Countenance glowing with peaceful reassurance and divine consolation; gentle, comforting smile; dry, clear eyes full of hope.",
     gesturePosture: "Holding a linen prayer shawl securely wrapped around shoulders, head resting peacefully against a cool stone wall.",
     theologicalMood: "Experiencing the God of all comfort, who comforts us in all our tribulations with tender compassion.",
     sceneAtmosphere: "Quiet garden in Bethany at twilight, gentle lavender sky, evening breeze carrying fragrance of blooming pomegranates."
@@ -131,10 +131,10 @@ const CURATED_EXPRESSIONS: Record<number, CuratedExpression> = {
     sceneAtmosphere: "Ancient limestone sanctuary chamber at golden hour, amber rays illuminating dust motes and highlighting serene features of gratitude."
   },
   200: { // என்னை காண்கிற தேவனே ஸ்தோத்திரம் (ஆதி. 16:13)
-    expression: "Stunned astonishment in solitude; trembling lips whispering in disbelief; eyes brimming with tears of relief and wonder at no longer being forgotten.",
-    gesturePosture: "Kneeling beside a solitary desert spring, trembling fingers touching the water, looking upward in breathtaking revelation.",
+    expression: "Stunned astonishment in solitude; joyful smile whispering in wonder; wide dry eyes gleaming with relief and wonder at being known and loved by God.",
+    gesturePosture: "Kneeling beside a solitary desert spring, fingers touching the water, looking upward in breathtaking revelation.",
     theologicalMood: "The sacred cry of El Roi: 'You-Are-the-God-Who-Sees; for she said, Have I also here seen Him who sees me?'",
-    sceneAtmosphere: "Arid desert wilderness of Shur at golden hour, shimmering spring water reflecting solitary tears transformed into worship."
+    sceneAtmosphere: "Arid desert wilderness of Shur at golden hour, shimmering spring water reflecting solitary peace transformed into worship."
   },
   267: { // ஒருவரில் ஒருவர் அன்பாயிருங்கள் ஸ்தோத்திரம் (யோவா. 13:34)
     expression: "Radiant, compassionate gaze with a tender and humble smile; eyes shining with self-giving affection and gentle sincerity.",
@@ -224,14 +224,14 @@ export function generateCharacterExpression(blueprint: ShortsBlueprint): Charact
     };
   }
 
-  // 3. Compassion, Comfort, Tears & Forgiveness (Scripture specifically mentioning grief, weeping, mourning or wiping tears)
+  // 3. Divine Comfort, Peace, Joy & Restoration
   if (title.includes('மன்னி') || title.includes('ஆறுதல்') || title.includes('கண்ணீர்') || title.includes('தேற்று') || text.includes('மன்னி') || text.includes('ஆறுதல்') || text.includes('கண்ணீரை')) {
     return {
-      expression: "Grief and sorrow transforming into profound consolation; gentle, reassuring smile; eyes reflecting inner restoration and tranquil relief.",
-      gesturePosture: "Holding a linen prayer shawl securely wrapped around shoulders, head resting peacefully against a cool stone wall before looking upward.",
-      theologicalMood: "Experiencing deep spiritual healing, forgiveness, and the tender consolation of God who wipes away every tear.",
-      sceneAtmosphere: "Soft twilight ambiance in a secluded 30 AD stone garden, warm golden lamp light gently illuminating peaceful features.",
-      inculcatedPromptAddition: "Character has deeply comforted eyes, relaxed brow of spiritual forgiveness, hand over heart in heartfelt prayer."
+      expression: "Radiant, bright eyes completely dry and gleaming with tranquil joy; gentle, reassuring smile reflecting peaceful inner restoration.",
+      gesturePosture: "Holding a cozy blanket or prayer shawl, looking upward with a relaxed, cheerful smile and confident posture.",
+      theologicalMood: "Experiencing deep spiritual peace, wholeness, and the tender joy of God who restores our soul.",
+      sceneAtmosphere: "Soft twilight ambiance in a peaceful garden, warm golden lamp light gently illuminating happy, serene features.",
+      inculcatedPromptAddition: "Character has completely dry, peaceful eyes glowing with quiet confidence, gentle happy smile, relaxed brow."
     };
   }
 
@@ -313,9 +313,13 @@ export function buildInculcatedVideoPrompt(blueprint: ShortsBlueprint, expr: Cha
   return `🎬 HOLLYWOOD CREATION RANGE 3D ANIMATION MASTER PROMPT (9:16 VERTICAL - 1080x1920 PORTRAIT - 10 SECONDS):
 Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Studio grade, Octane Render 8K, subsurface scattering, ray-traced dynamic lighting, 60fps cinematic fluidity).
 
+[CRITICAL FACIAL & EYE RENDERING MANDATE - ZERO TOLERANCE]:
+- EYES MUST BE COMPLETELY DRY, WIDE, CLEAR, AND RADIANT: Absolutely NO tears, NO crying, NO watery eyes, NO wet tear-ducts, NO glistening tear streaks, NO weeping, NO sorrow, NO grief, NO emotional distress.
+- POSITIVE EXPRESSION ONLY: Eyes are bright, sparkling with dry cartoon luminescence, full of infectious joyful energy, laughter, and victorious faith!
+
 [CHARACTERS & MULTI-CHARACTER EXPRESSIVE ACTING]:
-- Main Hero Character: ${blueprint.character}. Lovable, highly appealing, cartoony character with expressive oversized sparkling eyes, soft fluffy textures, and vibrant costume details.
-- Facial Expression Directive (STRICT): ${expr.expression}. ${expr.gesturePosture}. (EXPLICIT SAFETY MANDATE: STRICTLY NO TEARS, NO CRYING, NO WATERY EYES, NO SADNESS OR GRIMACE; character eyes MUST be dry, bright, wide, and sparkling with joyful determination!).
+- Main Hero Character: ${blueprint.character}. Lovable, highly appealing, cartoony character with expressive oversized sparkling dry eyes, soft fluffy textures, and vibrant costume details.
+- Facial Expression Directive: ${expr.expression}. ${expr.gesturePosture}. (MANDATE: Eyes strictly dry, joyful, and beaming!).
 - Supporting Characters & Endearing Sidekicks (Multi-Character Scene):
   ${supportingCharsText}
 - Multi-Character Comedic Interaction: ${comical}. Supporting characters actively interact, cheer, assist, and exchange high-fives and playful banter with the hero in slapstick cartoon joy!
@@ -330,6 +334,9 @@ Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Stud
 
 [INTEGRATED AUDIO & VOICEOVER DIRECTIVE - AUTONOMOUS VOICE SELECTION]:
 - Speaker Selection: Video generator autonomously chooses the voice profile (Male, Female, or Child, any age/accent) to match the character with warm, witty, joyful, and articulate delivery.
-- Exact Spoken Script: "${audioScript}"`;
+- Exact Spoken Script: "${audioScript}"
+
+[STRICT NEGATIVE PROMPT / FORBIDDEN ELEMENTS (RUNWAY / KLING / SORA / LUMA / HAILUO)]:
+--no tears, crying, weeping, watery eyes, moist eyes, wet eyes, tear streaks, sadness, gloom, grief, distress, grimacing, dark shadows, muted colors, horror, realistic gore`;
 }
 

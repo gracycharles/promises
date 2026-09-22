@@ -77,7 +77,7 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
     audioScript: characterMatchingScript,
     characterExpression: charExpr,
     supportingCharacters: supportingChars,
-    videoPrompt: raw.videoPrompt || videoPromptInculcated,
+    videoPrompt: videoPromptInculcated,
     subtitles: {
       line1Affirmation,
       line2Scripture,

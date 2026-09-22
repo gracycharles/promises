@@ -614,9 +614,14 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
 
           <div className="bg-stone-950 p-4 rounded-xl border border-stone-800 space-y-3">
             <div>
-              <div className="text-[10px] font-mono text-stone-400 uppercase tracking-wider mb-1 flex items-center justify-between">
+              <div className="text-[10px] font-mono text-stone-400 uppercase tracking-wider mb-1 flex items-center justify-between flex-wrap gap-1">
                 <span>9:16 Video Prompt (3D Pixar / DreamWorks Hollywood Grade):</span>
-                <span className="text-amber-400 font-semibold">{blueprint.characterStyle || '3D Animation'}</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                    STRICTLY DRY EYES (NO TEARS / NO CRYING)
+                  </span>
+                  <span className="text-amber-400 font-semibold">{blueprint.characterStyle || '3D Animation'}</span>
+                </div>
               </div>
               <p className="font-mono text-xs text-stone-200 select-all leading-relaxed bg-stone-900/90 p-3 rounded-lg border border-stone-800">
                 {blueprint.videoPrompt}

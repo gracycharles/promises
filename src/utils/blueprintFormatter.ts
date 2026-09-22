@@ -24,7 +24,7 @@ export function formatMidjourneyPrompt(b: ShortsBlueprint): string {
     ? ` Accompanied by cheerful animated sidekicks: ${b.supportingCharacters.map(sc => `${sc.name} (${sc.appearance})`).join(', ')}.`
     : '';
   
-  return `3D animation keyframe portrait of ${char}, ${charStyle} feature film character design, ${comical}.${sidekicks} Set in ${location}. Eye-popping vibrant color palette, volumetric golden morning lighting, ray-traced subsurface scattering, Octane render 8K resolution, 9:16 aspect ratio vertical portrait composition --ar 9:16 --v 6.0 --style raw --stylize 250`;
+  return `3D animation keyframe portrait of ${char}, ${charStyle} feature film character design, bright dry sparkling eyes, ${comical}.${sidekicks} Set in ${location}. Eye-popping vibrant color palette, volumetric golden morning lighting, ray-traced subsurface scattering, Octane render 8K resolution, 9:16 aspect ratio vertical portrait composition --ar 9:16 --v 6.0 --style raw --stylize 250 --no tears, crying, weeping, watery eyes, sadness`;
 }
 
 /**
@@ -45,9 +45,13 @@ export function formatVideoGenerationOnlyText(b: ShortsBlueprint): string {
 Target Duration: 10.0 Seconds | Format: 9:16 Vertical Portrait (1080x1920) | Output: Full-Bleed 60fps
 
 [COMPULSORY TRI-OUTPUT MANDATE FOR ALL GENERATED VIDEOS - NO MISTAKES PERMITTED]:
-- COMPULSORY 1 (VIDEO): 3D Animated Video Generation (9:16 portrait, full-bleed 60fps, 3D Pixar character acting, vivid lighting, zero tears).
+- COMPULSORY 1 (VIDEO): 3D Animated Video Generation (9:16 portrait, full-bleed 60fps, 3D Pixar character acting, vivid lighting, STRICTLY ZERO TEARS, ZERO WATERY EYES, ZERO CRYING; character eyes MUST be completely dry, bright, and sparkling with cheerful joy).
 - COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (Video Generator AUTONOMOUSLY CHOOSES the voice profile—male, female, or child—to best match ${b.characterName || b.character}; reads exact 10.0s spoken script + background music bed).
 - COMPULSORY 3 (TEXT OVERLAY): Burned-In Subtitle Text Overlay (Center-upper safe band y=450-850, high-contrast stylish typography, 100% clear of bottom 600px Shorts UI).
+
+[CRITICAL EYE DIRECTIVE - STRICTLY FORBIDDEN ELEMENTS]:
+- FORBIDDEN: NO tears, NO weeping, NO crying, NO watery eyes, NO wet tear-ducts, NO glossy tear films, NO sobbing, NO sadness or grief.
+- REQUIRED: Eyes must be completely dry, clear, wide, alert, sparkling with vibrant cartoon energy and contagious laughter.
 
 [MASTER AI VIDEO GENERATION PROMPT - PASTE INTO RUNWAY GEN-3 / KLING / LUMA / SORA]:
 ${b.videoPrompt}
