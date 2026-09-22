@@ -19,7 +19,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Sir Hedgie, a cute round hedgehog with sparkling brave eyes and miniature tinplate armor.",
     location: "A magical sunlit forest path covered in glowing golden autumn leaves and mossy cobblestones.",
     videoPrompt: "A funny and inspiring 3D animation in 9:16 vertical portrait. Sir Hedgie the tiny hedgehog stands proudly in his acorn helmet. When an enormous shadow looms, he raises his toothpick sword with comical grit. Suddenly, a giant glowing divine shield appears behind him; the shadow turns out to be a friendly butterfly that lands gently on his sword. Sir Hedgie cheers excitedly with a big grin. Rich vibrant lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bold & spirited] Step out in faith today! Be strong and courageous: do not be afraid, for the Lord your God is with you wherever you go! Joshua 1:9.",
     backgroundAudio: "Energetic acoustic guitar with heroic brass accents and light march drums at -18dB.",
     subtitles: {
@@ -54,7 +54,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Toby, an expressive, fluffy cartoon cloud with rosy pink cheeks and sleepy smiling eyes.",
     location: "A serene pastel sunset sky filled with cotton-candy clouds and gentle golden sunbeams.",
     videoPrompt: "A cozy, heart-soothing 3D animated scene in 9:16 vertical ratio. Toby the little cloud drops his heavy gray luggage, which dissolves into sparkling stars. He curls up comfortably on a glowing pastel rainbow hammock, pulling a cozy blanket made of twilight sky over his shoulders, smiling with total relief. Dreamy soft lighting, pastel color palette, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Soothing & gentle] Lay down your heavy burdens today. Jesus invites you: Come unto Me, and I will give you deep, restful peace. Matthew 11:28.",
     backgroundAudio: "Soothing acoustic harp with ambient soft rain sounds and gentle music box at -18dB.",
     subtitles: {
@@ -89,7 +89,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Professor Barnaby, a scholarly cartoon owl wearing a knitted tweed vest and brass spectacles.",
     location: "A sunlit ancient library terrace surrounded by blooming ivy and glowing golden stepping stones.",
     videoPrompt: "A clever and charming 3D cartoon animation in 9:16 vertical ratio. Professor Barnaby the owl scratches his feathers over a confusing maze of road signs. He looks up, takes a deep breath, and follows a radiant golden ray of light that forms a straight, clear path ahead. His eyes light up with joyful understanding, nodding happily. Warm golden lighting, crisp textures, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Wise & reassuring] Trust in the Lord with all your heart, and lean not on your own understanding. Acknowledge Him, and He will direct your paths! Proverbs 3:5-6.",
     backgroundAudio: "Warm acoustic piano with playful clarinet and light cello melody at -18dB.",
     subtitles: {
@@ -124,7 +124,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Finn, a friendly green sea turtle with smooth shell patterns and a serene smile.",
     location: "A breathtaking crystal-clear ocean lagoon with sunlight filtering down in radiant golden columns.",
     videoPrompt: "A tranquil 3D animation in 9:16 vertical portrait. Finn the sea turtle glides effortlessly through shimmering turquoise water illuminated by divine sunbeams. Colorful tiny fish swim alongside him in peaceful harmony. Finn pauses, closes his eyes peacefully, and floats serenely in the golden light. Hyper-realistic water caustics, vibrant corals, 8K ultra HD render, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Peaceful & profound] Be still right now, take a deep breath, and know that the Lord is God. He is in complete control! Psalm 46:10.",
     backgroundAudio: "Ambient underwater pads with soothing acoustic guitar harmonics and soft whale song echo at -18dB.",
     subtitles: {
@@ -159,7 +159,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Jasper, a feisty orange tabby kitten with bright emerald eyes and a miniature hero bandana.",
     location: "A dark playroom transformed instantly into a dazzling, cheerful wonderland of light.",
     videoPrompt: "An energetic comic-style 3D animation in 9:16 vertical ratio. Jasper the kitten stands firmly on all four paws. He clicks on a glowing lantern; radiant golden waves blast across the room, dissolving all shadows into vibrant sparkles. Jasper grins with high-octane confidence, giving a proud high-paw to the camera. Dynamic comic action lines, rich lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Dynamic & victorious] You have no reason to fear! God has given you a spirit of power, of love, and of a sound, clear mind! 2 Timothy 1:7.",
     backgroundAudio: "Uplifting pop-acoustic groove with bright piano riffs and energetic snare at -18dB.",
     subtitles: {
@@ -194,7 +194,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Sunny, a cheerful cartoon rooster with bright red comb, yellow beak, and blue sunglasses.",
     location: "A vibrant sun-drenched countryside barnyard at golden sunrise with blooming sunflowers.",
     videoPrompt: "A hilarious, energetic 3D animation in 9:16 vertical composition. Sunny the rooster leaps onto a wooden fence as the sun rises over sunflower fields. He does a flashy tap-dance routine, spins around, tosses glitter into the air, and points happily at the audience with an infectious smile. Brilliant morning golden hour rays, colorful feathers, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Enthusiastic & sparkling] Good morning! This is the day the Lord has made; let us rejoice, sing, and be glad in it! Psalm 118:24.",
     backgroundAudio: "Joyful acoustic banjo and whistle tune with upbeat handclaps and bass at -18dB.",
     subtitles: {
@@ -229,7 +229,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Penelope, a cute handcrafted clay penguin wearing a yellow knitted beanie hat.",
     location: "A sparkling snowy wonderland with pastel pink northern lights glowing in the sky.",
     videoPrompt: "A delightfully whimsical claymation 3D animation in 9:16 vertical ratio. Penelope the penguin gasps comically as her puzzle blocks tumble. As they land, each block magically locks together, revealing a glowing masterpiece of a sunlit castle. Penelope claps her clay flippers in pure amazement and hugs the completed puzzle with joy. Tactile clay textures, aurora borealis background, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Comforting & assured] Keep trusting! We know that all things work together for good to those who love God and walk in His purpose! Romans 8:28.",
     backgroundAudio: "Warm acoustic guitar with melodic glockenspiel and sweet cello harmonies at -18dB.",
     subtitles: {
@@ -264,7 +264,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Liam, a smiling toddler in cozy dinosaur pajamas, and Seraph, a luminous ethereal guardian with golden feather wings.",
     location: "A cozy moonlit bedroom glowing with warm fairy lights and stars through the skylight.",
     videoPrompt: "A heartwarming, visually stunning 3D animation in 9:16 vertical composition. Little Liam in dinosaur pajamas yawns sweetly and curls up under a star-patterned quilt. A magnificent, gentle guardian angel with soft glowing wings of light appears, wrapping radiant golden protection around the room. Liam smiles in deep peaceful sleep. Soft twilight blue and amber rim lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Serene & comforting] Sleep in total safety tonight. The Lord has given His angels charge over you, to guard and protect you in all your ways! Psalm 91:11.",
     backgroundAudio: "Soothing acoustic lullaby with gentle harp arpeggios and warm ambient pad at -18dB.",
     subtitles: {
@@ -299,7 +299,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "The Fruit Squad, adorable 3D animated fruits with smiling expressive faces and dancing feet.",
     location: "A sunny, colorful cartoon kitchen countertop filled with golden sunshine and blooming flowers.",
     videoPrompt: "A super cute, colorful 3D animation in 9:16 vertical ratio. A basket of adorable animated fruits leaps out, each holding colorful signboards with 'Love', 'Joy', and 'Peace'. They do a comical conga dance, sprinkling colorful glowing confetti and giggling with delight. Vibrant cheerful saturated colors, fluid animation, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bubbly & sweet] You are fruitful and blessed! Walk in the Spirit today, filled with love, joy, peace, patience, and kindness! Galatians 5:22-23.",
     backgroundAudio: "Playful acoustic ukulele and xylophone bounce with cheerful whistle and snaps at -18dB.",
     subtitles: {
@@ -334,7 +334,7 @@ export const AFFIRMATIONS_11_TO_20: ShortsBlueprint[] = [
     character: "Rosie, an adorable fluffy red panda with ringed tail and sparkling chestnut eyes.",
     location: "A sunlit meadow filled with pink cherry blossoms and rolling green hills under a bright rainbow.",
     videoPrompt: "A heartwarming 3D character animation in 9:16 vertical format. Rosie the fluffy red panda floats gently over blossoming cherry trees, holding a bouquet of glowing pink heart balloons. She hands a balloon to a squirrel and a sparrow, smiling with radiant warmth. A gentle golden rainbow arcs overhead as floating petals fill the screen. Lush textures, soft sun flare, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Warm & tender] No matter what changes in this world, remember this steadfast truth: God's love never fails! 1 Corinthians 13:8.",
     backgroundAudio: "Acoustic nylon guitar and sweet cello with ambient music box chime at -18dB.",
     subtitles: {

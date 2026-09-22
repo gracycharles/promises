@@ -26,7 +26,7 @@ export function formatMidjourneyPrompt(b: ShortsBlueprint): string {
 
 /**
  * 1) Master AI Video & Motion Generation Prompt
- * Combines 3D Hollywood animation visual directives, multi-character comical interactions, vibrant eye-popping color aesthetics, and British young female voice audio directives into a copyable master prompt for external video generators (Runway Gen-3 Alpha, Kling AI, Luma Dream Machine, OpenAI Sora, Pika, Hailuo).
+ * Combines 3D Hollywood animation visual directives, multi-character comical interactions, vibrant eye-popping color aesthetics, and character-matched voice audio directives into a copyable master prompt for external video generators (Runway Gen-3 Alpha, Kling AI, Luma Dream Machine, OpenAI Sora, Pika, Hailuo).
  */
 export function formatVideoGenerationOnlyText(b: ShortsBlueprint): string {
   const line1Affirmation = b.subtitles?.line1Affirmation || b.affirmationText || b.englishText || b.affirmationTitle || '';
@@ -43,7 +43,7 @@ Target Duration: 10.0 Seconds | Format: 9:16 Vertical Portrait (1080x1920) | Out
 
 [COMPULSORY TRI-OUTPUT MANDATE FOR ALL GENERATED VIDEOS - NO MISTAKES PERMITTED]:
 - COMPULSORY 1 (VIDEO): 3D Animated Video Generation (9:16 portrait, full-bleed 60fps, 3D Pixar character acting, vivid lighting, zero tears).
-- COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (British young female voice reading the exact 10.0s spoken script + background music bed).
+- COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (Character-matched voice reading the exact 10.0s spoken script + background music bed).
 - COMPULSORY 3 (TEXT OVERLAY): Burned-In Subtitle Text Overlay (Center-upper safe band y=450-850, high-contrast stylish typography, 100% clear of bottom 600px Shorts UI).
 
 [MASTER AI VIDEO GENERATION PROMPT - PASTE INTO RUNWAY GEN-3 / KLING / LUMA / SORA]:
@@ -56,7 +56,7 @@ ${b.videoPrompt}
 ${expr ? `- Character Acting Nuance: ${expr.expression}\n- Scene Atmosphere: ${expr.sceneAtmosphere}` : ''}
 
 [EXTERNAL AI VOICE & NARRATION DIRECTIVE (CHARACTER-MATCHED VOICE)]:
-- Voice Profile: ${b.voiceProfile || voiceDir.voiceProfileDirective}
+- Voice Profile: ${voiceDir.voiceProfileDirective}
 - Vocal Persona: ${voiceDir.vocalTone}
 - Witty Nuance: ${voiceDir.wittyComedicNuance}
 - Exact Spoken Script (Strictly 10.0s): "${b.audioScript || voiceDir.audioNarrationScript}"
@@ -96,7 +96,7 @@ export function formatVideoPromptOnlyText(b: ShortsBlueprint): string {
   const typo = computeOverlayTypography(line1Affirmation, line2Scripture, line3Ref);
 
   return `🎥 COMPULSORY TRI-OUTPUT VIDEO GENERATION PROMPT (9:16 VERTICAL - PORTRAIT 1080x1920):
-[COMPULSORY MANDATE: Output MUST include Video Animation + Synchronized British Female Voice Audio + Burned-In Safe-Zone Subtitle Text Overlay]
+[COMPULSORY MANDATE: Output MUST include Video Animation + Synchronized Character-Matched Voice Audio + Burned-In Safe-Zone Subtitle Text Overlay]
 
 ${b.videoPrompt}
 
@@ -240,7 +240,7 @@ export function generateDynamicBlueprint(item: PraiseItem): ShortsBlueprint {
     character: "A lovable, expressive 3D animated character beaming with radiant hope and warmth.",
     location: "A vibrant sunlit landscape glowing with celestial morning light.",
     videoPrompt: `A vibrant 3D Pixar-style 9:16 vertical animation. A joyful, expressive animated character stands in a breathtaking meadow filled with blooming wildflowers. As golden sunlight streams down, the character places a hand on their heart and smiles with deep peace and triumph. Warm cinematic lighting, photorealistic 8K render, 9:16 portrait composition.`,
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: `[Upbeat & clear] Today I declare: ${cleanTitle}! ${engRef}.`,
     backgroundAudio: "Playful acoustic melody with cheerful bell chimes at -18dB.",
     subtitles: {

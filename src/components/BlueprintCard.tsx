@@ -600,7 +600,7 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
           </div>
         </section>
 
-        {/* 🎙 Audio & Voiceover Prompt (with British Young Female Voice Narration Player) */}
+        {/* 🎙 Audio & Voiceover Prompt (with Character-Matched Voice Narration Player) */}
         <section className="bg-stone-950/70 rounded-xl border border-emerald-500/30 overflow-hidden transition-all shadow-md">
           <div className="flex flex-wrap items-center justify-between gap-2 p-3.5 sm:p-4 hover:bg-stone-900/40 transition-colors">
             <button

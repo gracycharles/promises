@@ -318,7 +318,7 @@ Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Stud
 - Dynamic 9:16 vertical camera push-in tracking shot, sweeping smoothly around the character as they celebrate with exuberant comedic energy and heartwarming faith.
 
 [INTEGRATED AUDIO & VOICEOVER DIRECTIVE]:
-- Speaker: British Young Female voice (warm, witty, joyful, crisp articulation).
+- Speaker: Character-matched voice (warm, witty, joyful, crisp articulation).
 - Exact Spoken Script: "${audioScript}"`;
 }
 

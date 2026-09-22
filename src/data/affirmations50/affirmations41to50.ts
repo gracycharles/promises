@@ -19,7 +19,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Zephyr, an iridescent magenta and emerald hummingbird with twinkling eyes and miniature leather aviator helmet.",
     location: "A sparkling seaside bay at sunset with giant calm azure waves and warm breeze.",
     videoPrompt: "A breathtaking and funny 3D character animation in 9:16 vertical portrait. Zephyr the tiny hummingbird hovers in front of a colossal ship's white sail. He flaps his tiny wings with a playful grin; a golden swirl of Holy Spirit wind bursts from his wings, instantly billowing the giant sails and gliding the massive ship effortlessly across the golden sea. Zephyr does a victory loop in midair. Hyper-detailed feather iridescence, glowing wind streams, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Dynamic & inspiring] Not by human might, nor by power, but by My Spirit, says the Lord of hosts! Receive His supernatural empowering today! Zechariah 4:6.",
     backgroundAudio: "Cinematic acoustic guitar with sweeping orchestral strings and wind chimes at -18dB.",
     subtitles: {
@@ -54,7 +54,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Captain Bruno, a loyal bulldog knight with shiny polished armor and a confident happy grin.",
     location: "A majestic sunlit mountain fortress perched atop an unbreakable granite rock above storm clouds.",
     videoPrompt: "A bold, humorous 3D cartoon animation in 9:16 vertical ratio. Bruno the bulldog sits comfortably on top of the towering stone fortress wall, enjoying a cup of hot chamomile tea. Fierce storm gusts blow outside, but within the glowing walls of God's fortress, everything is calm, warm, and sunlit. Bruno taps the solid stone with his sword and smiles with absolute security. Dramatic fortress lighting, volumetric sunrays, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bold & rock-solid] Stand firm! The Lord is your rock, your fortress, and your deliverer. In Him you are safe, secure, and established forever! Psalm 18:2.",
     backgroundAudio: "Heroic acoustic-orchestral anthem with French horn and steady driving acoustic percussion at -18dB.",
     subtitles: {
@@ -89,7 +89,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Victor, a gleaming cartoon golden trophy with a beaming smile and sparkling ruby handles.",
     location: "A sunlit celebratory stadium filled with floating confetti, golden balloons, and joyful crowds.",
     videoPrompt: "A high-energy celebratory 3D animation in 9:16 vertical composition. Victor the golden trophy does a spectacular leap, spins in mid-air, and lands in a heroic triumphant pose as a massive explosion of rainbow confetti showers around him. A golden banner unfurls reading 'VICTORY IN JESUS'. Victor winks at the viewer and raises two thumbs up. Dazzling light flares, vibrant stadium atmosphere, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Triumphant & exuberant] Thanks be to God, who gives us the victory through our Lord Jesus Christ! You are walking in victory today! 1 Corinthians 15:57.",
     backgroundAudio: "Joyful celebratory acoustic groove with triumphant brass stabs and driving handclaps at -18dB.",
     subtitles: {
@@ -124,7 +124,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Barnaby, a sweet owl in a nightcap, and Sunny, a cheerful yellow meadow lark.",
     location: "A high tree bough overlooking an expansive valley as golden dawn banishes the dark night.",
     videoPrompt: "A breathtaking transformative 3D animation in 9:16 vertical ratio. Dark misty night clouds dissolve as radiant golden sunrise rays pierce through the forest canopy. Barnaby the owl tosses off his nightcap with a joyful gasp; flowers burst into bloom below and colorful songbirds take flight in golden light. Barnaby smiles warmly with radiant hope in his eyes. Spectacular dawn colors, golden bokeh, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Comforting & hopeful] Take heart! Weeping may endure for a night, but unstoppable joy comes in the morning! God's favor is upon your entire life! Psalm 30:5.",
     backgroundAudio: "Soothing acoustic guitar swelling into an uplifting sunrise orchestral theme at -18dB.",
     subtitles: {
@@ -159,7 +159,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Gemma, an adorable long-necked cartoon giraffe wearing rainbow legwarmers and big friendly eyelashes.",
     location: "A dreamy pastel cosmic sky filled with glowing stars, floating cotton-candy clouds, and a smiling crescent moon.",
     videoPrompt: "A funny and awe-inspiring 3D character animation in 9:16 vertical format. Gemma the giraffe pushes off a glowing golden cloud trampoline, soaring high into the starlit sky. She does a triple mid-air spin, winks at the smiling crescent moon, and floats down smoothly using a tiny umbrella as a parachute, laughing happily. Shimmering star dust, vibrant pastel cosmos, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Enthusiastic & full of faith] Never count God out! What is impossible with man is totally possible with God! Believe for your miracle today! Matthew 19:26.",
     backgroundAudio: "Upbeat acoustic guitar and celestial glockenspiel with bouncy bassline at -18dB.",
     subtitles: {
@@ -194,7 +194,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "The Woodland Praise Band, charming 3D cartoon forest animals in colorful parade jackets.",
     location: "A sunlit cobblestone village square decorated with colorful bunting, flower petals, and bright blue sky.",
     videoPrompt: "A high-energy, delightfully festive 3D animation in 9:16 vertical composition. The woodland animal band marches toward the camera playing upbeat, joyful music. Streamers, flower petals, and sparkling musical notes burst into the air around them. The bandleader bunny twirls his golden baton and leaps with an infectious grin. Saturated vibrant colors, festive atmosphere, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Festive & joyful] Make a joyful shout to the Lord! Serve the Lord with gladness, and come before His loving presence with songs of joy! Psalm 100:1-2.",
     backgroundAudio: "Upbeat acoustic band with joyful brass melody, marching snare, and handclaps at -18dB.",
     subtitles: {
@@ -229,7 +229,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Wally, a massive pastel-blue whale with a kind eye and peaceful smile.",
     location: "A majestic luminescent deep ocean with glowing coral arches, bioluminescent jellyfish, and serene blue light shafts.",
     videoPrompt: "A deeply calming 3D character animation in 9:16 vertical format. Wally the gentle whale glides slowly and gracefully through clear blue water. Tiny glowing neon fish swim peacefully around his fins in harmonic synchronization. Wally releases a soft glowing bubble spout that gently rises toward the sunlight above. He smiles with deep, restful composure. Oceanic caustics, serene volumetric god-rays, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Tranquil & deeply comforting] Fix your eyes on God today. He will keep you in perfect, absolute peace, because your mind is anchored in Him! Isaiah 26:3.",
     backgroundAudio: "Soothing acoustic piano with ambient whale-call harmonics and warm ocean pad at -18dB.",
     subtitles: {
@@ -264,7 +264,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "Barnaby, a sweet chipmunk with brown stripes, wearing a little green gardening apron.",
     location: "A vibrant sun-drenched garden meadow with rich dark soil, sprouting flowers, and golden sunshine.",
     videoPrompt: "A heartwarming and funny 3D character animation in 9:16 vertical ratio. Barnaby the chipmunk pats the soil over a planted acorn. A burst of golden sparkles erupts as a magnificent leafy tree shoots up instantly, heavy with glowing golden acorns and fruit. Barnaby happily scoops them into wooden baskets and shares them with smiling woodland friends. Rich warm colors, rapid growth visual magic, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Enthusiastic & generous] God is able to make all grace abound toward you, so that you always have all sufficiency for every good work! 2 Corinthians 9:8.",
     backgroundAudio: "Bouncy acoustic ukulele with playful cello melody and light shaker groove at -18dB.",
     subtitles: {
@@ -299,7 +299,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "The Creation Choir, a colorful group of 3D animated animals in harmonious song.",
     location: "A breathtaking mountain amphitheater at golden sunset with waterfalls cascading behind them.",
     videoPrompt: "A magnificent and joyful 3D character animation in 9:16 vertical composition. All creation unites in song! The tiny frog inflates his cheeks with a high-pitched trill, the big friendly bear smiles warmly singing a rich bass note, and dozens of colorful birds soar overhead forming a heart shape in the sky. Divine golden sunbeams illuminate the amphitheater. Glorious choral atmosphere, rich cinematic lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Radiant & celebratory] Let everything that has breath praise the Lord! Lift up your voice and praise the Lord today! Hallelujah! Psalm 150:6.",
     backgroundAudio: "Glorious acoustic and choral celebration with uplifting acoustic guitar, strings, and joyous harmonies at -18dB.",
     subtitles: {
@@ -334,7 +334,7 @@ export const AFFIRMATIONS_41_TO_50: ShortsBlueprint[] = [
     character: "All 50 beloved characters from Shorts #1 to #50 smiling, cheering, waving, and embracing in divine light.",
     location: "A breathtaking golden city courtyard with crystal rivers, blooming trees of life, and radiant eternal sunshine.",
     videoPrompt: "A grand, emotionally moving, and joyful 3D animated finale in 9:16 vertical format. All 50 characters stand together in a radiant golden courtyard surrounded by crystalline waterfalls and emerald rolling meadows. A divine, warm golden light gently touches every tear, turning them into sparkling diamonds. The characters burst into cheers, hugging one another, jumping for joy, and waving warmly right at the viewer. Breathtaking golden hour brilliance, masterwork 3D rendering, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Heartfelt, triumphant & deeply comforting] Hold on to hope! God will wipe away every tear from your eyes. Sorrow and pain shall vanish, and eternal joy is yours forever in Christ! Revelation 21:4.",
     backgroundAudio: "Sweeping cinematic orchestral masterwork with uplifting acoustic guitar, angelic choir, and triumphant brass at -18dB.",
     subtitles: {

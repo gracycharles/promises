@@ -51,7 +51,7 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
   const existingTags = (raw.seo?.tags || []).map(t => t.replace(/^#/, '').trim());
   const mergedTags = Array.from(new Set([...existingTags, ...TARGET_ALGORITHM_TAGS]));
 
-  // British young female voice profile tailored to the specific character
+  // Character-matched voice profile tailored to the specific character
   const characterMatchingVoice = raw.voiceProfile || voiceDir.voiceProfileDirective;
   const characterMatchingScript = raw.audioScript || voiceDir.audioNarrationScript;
 

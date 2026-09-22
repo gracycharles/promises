@@ -19,7 +19,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Oliver, a lovable white mountain goat with tiny golden horns and bright determined blue eyes.",
     location: "A majestic Alpine peak surrounded by glowing emerald valleys and radiant golden morning clouds.",
     videoPrompt: "A dynamic and funny 3D character animation in 9:16 vertical ratio. Oliver the little mountain goat in hiking boots looks up at a colossal cliff face. Instead of struggling, he does a comical little tap-dance and hops effortlessly up glowing crystal footholds to the very top, planting a tiny flag with a cross on it. He smiles triumphantly as glorious sunrise beams illuminate the world. Crisp mountain air lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Inspiring & cheerful] Lift up your eyes today! Where does your help come from? Your help comes from the Lord, the Maker of heaven and earth! Psalm 121:1-2.",
     backgroundAudio: "Uplifting acoustic guitar with Alpine horn accents and cheerful percussion at -18dB.",
     subtitles: {
@@ -54,7 +54,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Lumina, a friendly cartoon firefly with glowing amber belly, translucent wings, and big expressive eyes.",
     location: "An enchanting twilight forest grove filled with giant glowing bluebells and friendly nocturnal critters.",
     videoPrompt: "A magical glowing 3D animation in 9:16 vertical portrait. Lumina the firefly flies into a dark forest clearing. He adjusts his hard hat, takes a deep breath, and emits a dazzling, warm golden bioluminescent flash. The entire forest awakens with glowing flowers, twinkling fairy lights, and smiling animal friends clapping in delight. Lumina bows playfully. Bioluminescent contrast, magical particle effects, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Radiant & encouraging] Don't hide your light! You are the light of the world—a city set on a hill that shines with God's unstoppable brightness! Matthew 5:14.",
     backgroundAudio: "Sparkling acoustic piano with magical glockenspiel and warm synth pad at -18dB.",
     subtitles: {
@@ -89,7 +89,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Bella, a magnificent cartoon butterfly with shimmering iridescent turquoise and gold wings.",
     location: "A vibrant sun-drenched meadow garden bursting with blooming tulips, lavender, and sparkling morning dew.",
     videoPrompt: "A stunning transformative 3D animation in 9:16 vertical composition. Bella breaks free from her cozy chrysalis with a comical pop. As she unfolds her magnificent stained-glass wings, brilliant golden glitter showers over the blooming flowers. She flutters up gracefully, spinning with joyful laughter, her wings casting rainbow reflections across the garden. Lush depth of field, vibrant floral colors, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Joyful & triumphant] Behold the beauty of grace: In Christ, you are a brand new creation! The old has passed away; all things are made new! 2 Corinthians 5:17.",
     backgroundAudio: "Gentle harp and acoustic guitar crescendoing into a triumphant orchestral string melody at -18dB.",
     subtitles: {
@@ -124,7 +124,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Bucky, an enthusiastic cartoon beaver with buck teeth, safety goggles, and a cheerful smile.",
     location: "A sparkling riverbank in a lush forest with a colorful handcrafted wooden waterpark.",
     videoPrompt: "A funny and heartwarming 3D animation in 9:16 vertical format. Bucky the beaver finishes driving the last wooden peg into a magnificent playground slide. He pulls a lever, and crystal water rushes down as forest animals slide down with joyful squeals. Bucky claps his paws, beaming with pure delight as golden sunlight illuminates his creative masterpiece. Rich wooden textures, splash physics, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Enthusiastic & sweet] Delight yourself in the Lord today! Find your joy in His presence, and He will give you the deepest desires of your heart! Psalm 37:4.",
     backgroundAudio: "Bouncy acoustic ukulele with playful whistle tune and cheerful xylophone at -18dB.",
     subtitles: {
@@ -159,7 +159,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Granny Gertrude, a chubby cuddly brown bear wearing a floral apron and wire-rim spectacles.",
     location: "A cozy sunlit log cabin living room with a glowing stone hearth, baskets of colorful yarn, and tea kettle.",
     videoPrompt: "A cozy felt-textured 3D animation in 9:16 vertical composition. Granny Gertrude rocks gently in her chair, happily wrapping a soft, glowing rainbow-knit scarf around a shivering little hedgehog. The hedgehog snuggles in warmly with a huge happy smile. Granny pats his head tenderly and smiles warmly right at the viewer. Tactile wool textures, warm fireplace glow, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Warm & grandmotherly] Put on tender mercies, kindness, humility, and love today. You are chosen, holy, and deeply beloved by God! Colossians 3:12.",
     backgroundAudio: "Cozy acoustic fingerpicked guitar with gentle music box and soft warm cello at -18dB.",
     subtitles: {
@@ -194,7 +194,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Bruno, a loyal bulldog with comical jowls, wearing a knight's visor and carrying a glowing golden shield.",
     location: "A vibrant cartoon castle courtyard under bright blue skies and fluttering banners.",
     videoPrompt: "A funny and action-packed 3D cartoon animation in 9:16 vertical ratio. Bruno the bulldog plants his paws firmly in the castle courtyard. Incoming gloomy rainclouds shoot dark lightning bolts, but Bruno raises his glowing golden shield of faith. The bolts bounce off and burst into cheerful rainbow bubbles and flower petals. Bruno wags his stubby tail and gives a proud hero pose. Dynamic comic action, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bold & triumphant] Stand secure today! No weapon formed against you shall prosper; this is the heritage of the servants of the Lord! Isaiah 54:17.",
     backgroundAudio: "Epic heroic acoustic orchestration with punchy brass and driving snare groove at -18dB.",
     subtitles: {
@@ -229,7 +229,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Barnaby, a comical pelican with a huge yellow pouch, wearing a sailor hat and sunglasses.",
     location: "A sunny wooden pier overlooking crystal turquoise ocean waves with sea breezes.",
     videoPrompt: "A funny and uplifting 3D character animation in 9:16 vertical format. Barnaby the pelican stands on a sunlit seaside pier. He unloads a heavy backpack of stones into a glowing golden whirlpool. Instantly, a swarm of glowing golden fish leap out, doing mid-air flips and splashing refreshing water. Barnaby flaps his wings and lets out a joyful honk of complete relief. Vibrant seaside lighting, ocean spray, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Comforting & cheerful] Cast all your anxieties and worries onto God today—for He cares for you with infinite, tender love! 1 Peter 5:7.",
     backgroundAudio: "Cheerful acoustic guitar with breezy accordion and ocean wave ambience at -18dB.",
     subtitles: {
@@ -264,7 +264,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Dr. Barnaby, a cute white rabbit in a tiny white doctor's coat with floppy ears and a smiling face.",
     location: "A vibrant sun-drenched greenhouse filled with sparkling medicinal herbs, orchids, and glowing sunbeams.",
     videoPrompt: "A heartwarming 3D animation in 9:16 vertical ratio. Dr. Barnaby the bunny gently taps a drooping sunflower with his little paw. A warm beam of golden healing light cascades down; the flower instantly straightens up, blooming in radiant yellow with sparkling petals. Dr. Barnaby hops joyfully in the air, giving two enthusiastic thumbs-up to the viewer. Warm greenhouse sun rays, soft bloom, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Restorative & joyous] Bless the Lord, O my soul! Forget not His benefits: He forgives all your sins and heals all your diseases! Psalm 103:2-3.",
     backgroundAudio: "Soothing acoustic piano and cello with uplifting glockenspiel chimes at -18dB.",
     subtitles: {
@@ -299,7 +299,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Mia, an adventurous cartoon field mouse with big pink ears, wearing an aviator jacket and silk scarf.",
     location: "High above the clouds at golden hour with vast dreamy pastel pink and golden cloudscapes.",
     videoPrompt: "A breathtaking and fun 3D animation in 9:16 vertical format. Mia the little mouse navigates her glowing origami airplane through a puffy gray cloud. With an excited giggle, she pulls back the toothpick steering wheel and bursts out into a dazzling golden sunset sky filled with floating islands and rainbows. Mia waves her silk scarf proudly. Spectacular volumetric clouds, golden rim lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Inspiring & daring] Walk by faith today! Faith is the substance of things hoped for, the certainty of things not seen! Hebrews 11:1.",
     backgroundAudio: "Cinematic acoustic guitar and uplifting whistle melody with airy synth textures at -18dB.",
     subtitles: {
@@ -334,7 +334,7 @@ export const AFFIRMATIONS_21_TO_30: ShortsBlueprint[] = [
     character: "Pip, an energetic scarlet and gold macaw cartoon with expressive eyes and a glossy beak.",
     location: "A tropical sunlit rainforest canopy overlooking a sparkling waterfall under a bright morning rainbow.",
     videoPrompt: "A vibrant, cheerful 3D animation in 9:16 vertical composition. Pip the parrot stands on a mossy branch holding his tiny vintage microphone. As he speaks cheerful praises, glowing golden musical notes float out, blessing nearby animals who begin tapping their feet in joy. Pip does a cute wing flourish and smiles brightly. Lush rainforest greenery, sparkling waterfall mist, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Sweet & cheerful] Speak words of life today! Let the words of your mouth and the meditation of your heart be pleasing to the Lord, your Rock and Redeemer! Psalm 19:14.",
     backgroundAudio: "Playful tropical marimba and acoustic guitar with cheerful birdsong and light percussion at -18dB.",
     subtitles: {

@@ -19,7 +19,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Pip, a cheerful cartoon penguin with glossy feathers, orange beak, and bright smiling eyes.",
     location: "A sparkling frozen pond in an alpine forest illuminated by glowing lanterns and twilight aurora.",
     videoPrompt: "A joyful 3D character animation in 9:16 vertical ratio. Pip the penguin glides across the mirror-like ice, doing an adorable leap and spin. Where his skates touch the ice, glowing golden musical ribbons and hearts light up the winter wonderland. Pip finishes with a comical bow, slipping slightly on the ice and laughing happily. Shimmering ice reflections, aurora borealis sky, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bubbly & radiant] In God's presence there is fullness of joy, and at His right hand are pleasures forevermore! Walk in His path of life today! Psalm 16:11.",
     backgroundAudio: "Playful acoustic guitar and bell melody with upbeat orchestral pizzicato at -18dB.",
     subtitles: {
@@ -54,7 +54,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Barnaby, a friendly cartoon mole with pink nose, tweed coat, and brass magnifying glass.",
     location: "A magical meadow garden filled with giant clover, sunlit wildflowers, and hidden treasure alcoves.",
     videoPrompt: "A clever and fun 3D animation in 9:16 vertical composition. Barnaby the mole peeks through his magnifying glass, inspecting tiny footprints. He uncovers a glowing treasure chest under an ancient oak root. As he opens it, radiant golden light illuminates his face, revealing fresh fruit, bread, and jewels that pour out endlessly. Barnaby gasps with joy, tipping his detective hat. Warm storybook lighting, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Wise & reassuring] Seek first the kingdom of God and His righteousness, and all these wonderful blessings shall be added unto you! Matthew 6:33.",
     backgroundAudio: "Playful acoustic guitar and warm clarinet with light chime flourishes at -18dB.",
     subtitles: {
@@ -89,7 +89,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Barnaby, a courageous field mouse with a pink nose, and Sparky, an enormous emerald dragon with big soulful eyes.",
     location: "A mysterious crystal cave that lights up with warm amber candlelight and glowing crystals.",
     videoPrompt: "A heartwarming and funny 3D character animation in 9:16 vertical format. Barnaby the tiny mouse smiles warmly and hands a giant strawberry to the huge dragon. The dragon sniffles cutely, wiping away a happy tear with a giant claw, and gently hugs the little mouse with his tail. Golden light fills the cave, dispelling every dark shadow. Rich crystal reflections, emotional expressions, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Warm & liberating] There is no fear in love! Perfect love casts out all fear. Rest safely in the Father's overwhelming love today! 1 John 4:18.",
     backgroundAudio: "Soothing acoustic piano and sweet orchestral strings with gentle glockenspiel at -18dB.",
     subtitles: {
@@ -124,7 +124,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Chef Pierre, a cheerful cartoon raccoon wearing a white chef's apron and toque.",
     location: "A cozy sunlit rustic bakery kitchen with flour dusting the air, fresh bread loaves, and golden morning sunlight.",
     videoPrompt: "A deliciously heartwarming 3D animation in 9:16 vertical ratio. Chef Pierre the raccoon presents a warm, fresh-baked honey pastry that glows with appetizing golden warmth. He takes a bite, his eyes rolling back in pure bliss as musical notes of delight flutter in the air. He offers a pastry toward the camera with a big inviting smile. Warm bakery lighting, mouth-watering steam physics, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Delighted & sweet] Oh, taste and see that the Lord is good! Blessed and joyful is the person who places their trust in Him! Psalm 34:8.",
     backgroundAudio: "Cozy acoustic accordion and nylon guitar with light shaker and cheerful whistle at -18dB.",
     subtitles: {
@@ -159,7 +159,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Tiny Tommy, an energetic cartoon ant with expressive antenna and oversized hero boots.",
     location: "A picnic lawn viewed from a tiny macro perspective with giant blades of grass and glowing dandelion fluff.",
     videoPrompt: "A funny and high-energy 3D animation in 9:16 vertical composition. Tommy the ant stands beneath an enormous dropped watermelon slice. He grins, taps his tiny muscles, and effortlessly lifts the entire fruit above his head with a burst of golden superhero aura. He spins it on his index finger like a basketball, winking at the screen. Macro camera depth of field, vibrant green and ruby red colors, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Energetic & triumphant] Be strong in the Lord and in the power of His might! In your weakness, His strength is made totally perfect! Ephesians 6:10.",
     backgroundAudio: "Punchy superhero brass theme with energetic acoustic drum beat and electric bass groove at -18dB.",
     subtitles: {
@@ -194,7 +194,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Felix, an adorable red fox with bushy white-tipped tail, wearing a warm woolen vest.",
     location: "A mystical moonlit forest path surrounded by giant ancient weeping willows and fireflies.",
     videoPrompt: "A magical and comforting 3D character animation in 9:16 vertical ratio. Felix the fox walks down a shadowy forest path. Every time his lantern shines forward, a bright circle of warm golden light reveals safe stone pathways, turning prickly brambles into glowing flowers. Felix pauses, looks back at the safe trail of light, and smiles with serene trust. Ethereal atmospheric fog, glowing lantern illumination, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Gentle & steady] You will never walk in darkness! God's Word is a lamp unto your feet, and a brilliant light unto your path! Psalm 119:105.",
     backgroundAudio: "Soothing acoustic guitar and warm flute with soft ambient nocturnal chimes at -18dB.",
     subtitles: {
@@ -229,7 +229,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Bao, a round cuddly giant panda with soft black-and-white fur and a serene smile.",
     location: "A tranquil bamboo grove beside a gentle cascading stone waterfall at golden afternoon sunlight.",
     videoPrompt: "A calming 3D character animation in 9:16 vertical format. Bao the panda sits in peaceful meditation as soft cherry blossom petals drift around him. Even as a playful gust of wind blows, he smiles serenely, sipping his warm herbal tea as a glowing golden aura of divine peace surrounds him. Gentle water ripples, warm sunlight filtering through bamboo leaves, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Tranquil & deeply calming] Let the peace of God rule in your heart today. Breathe in His grace, exhale all worry, and be filled with gratefulness! Colossians 3:15.",
     backgroundAudio: "Acoustic traditional koto and bamboo flute with gentle stream sounds and warm pad at -18dB.",
     subtitles: {
@@ -264,7 +264,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Nurse Bella, a sweet gray koala with big fluffy ears and a gentle, compassionate smile.",
     location: "A sunlit cozy forest clinic made from an old hollow oak tree glowing with fairy lanterns.",
     videoPrompt: "A deeply heartwarming 3D felt-textured animation in 9:16 vertical ratio. Nurse Bella gently holds a wounded little bird in her soft paws, applying a glowing golden heart bandage. Warm golden light spreads through the bird, who flaps his wings with newfound energy and nuzzles Bella's cheek. Bella smiles with tearful joy and compassion. Soft warm lighting, tactile fabric textures, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Tender & restorative] If your heart is heavy or hurting today, know this: The Lord heals the brokenhearted and binds up every single wound! Psalm 147:3.",
     backgroundAudio: "Soothing acoustic piano and sweet solo cello with delicate music box arpeggios at -18dB.",
     subtitles: {
@@ -299,7 +299,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Barnaby, a bushy-tailed red squirrel with twinkling hazel eyes and boundless energy.",
     location: "A high sunlit cathedral bell tower woven out of ancient living oak branches overlooking a rainbow valley.",
     videoPrompt: "A high-spirited and funny 3D character animation in 9:16 vertical composition. Barnaby the squirrel swings playfully from bell rope to bell rope, making golden bells ring out harmonic chords. Colorful confetti and musical sparks burst from the bells, showering the valley below. Barnaby lands on a branch, folds his paws in quick grateful prayer, and gives a joyful thumbs-up. Golden sunshine, dynamic motion blur, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Lively & spirited] Rejoice always! Pray without ceasing, and in everything give thanks—for this is God's joyful will for you in Christ! 1 Thessalonians 5:16-18.",
     backgroundAudio: "Upbeat acoustic guitar and bright bell carillon with energetic handclaps at -18dB.",
     subtitles: {
@@ -334,7 +334,7 @@ export const AFFIRMATIONS_31_TO_40: ShortsBlueprint[] = [
     character: "Sparky, a lovable retro robot with big expressive LED eyes and shiny silver enamel plating.",
     location: "A sunlit futuristic rooftop garden overlooking a gleaming, eco-friendly utopian city.",
     videoPrompt: "An awesome and comical 3D animation in 9:16 vertical format. Sparky the robot opens his chest panel and snaps in a radiant golden crystal of truth. His LED eyes change from dull blue to brilliant glowing gold. Sleek wings pop out of his back, and he hovers smoothly into the sunlit sky, projecting a holographic smile of renewal. Dazzling particle effects, futuristic reflections, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Inspiring & transformative] Do not conform to fear or negativity. Be transformed by the renewing of your mind with God's living truth! Romans 12:2.",
     backgroundAudio: "Futuristic acoustic-synth groove with bright arpeggiated piano and driving beat at -18dB.",
     subtitles: {

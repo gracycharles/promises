@@ -19,7 +19,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Barnaby, an adorable fluffy bumblebee wearing brass aviator goggles and a red miniature superhero cape, flexing tiny fuzzy arms.",
     location: "A vibrant sun-drenched flower garden with giant dew-covered clover leaves under glowing morning sunlight.",
     videoPrompt: "A vibrant 3D Pixar-style 9:16 vertical animation. A chubby, lovable bumblebee named Barnaby wearing tiny aviator goggles and a red cloth cape stands atop a mossy stone. He flexes his tiny fuzzy arms with comical superhero swagger (EXPLICIT FACIAL EXPRESSION DIRECTIVE: NO TEARS, NO CRYING, NO WATERY EYES, NO SADNESS OR GRIMACE; eyes are wide, dry, bright, sparkling, and brimming with pure joyful confidence). He smiles with playful determination and easily lifts a massive ripe red strawberry over his head with one hand, giving a confident wink and big cheerful grin at the camera. Rich colors, volumetric sunbeams, warm cinematic lighting, photorealistic 8K render, 9:16 portrait composition.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Upbeat chimes] Today I declare: I can do all things through Christ who gives me strength! Philippians 4:13.",
     backgroundAudio: "Playful acoustic ukulele melody with cheerful bell chimes and warm string harmony at -18dB.",
     subtitles: {
@@ -54,7 +54,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Captain Cosmo, a wide-eyed child in cozy pajamas wearing a handmade silver cardboard rocket suit with foil badges.",
     location: "A cozy nighttime bedroom that magically dissolves into a breathtaking glowing galaxy of stars and planets.",
     videoPrompt: "A stunning hand-painted comic-style 9:16 vertical animation. Captain Cosmo, a smiling kid in a decorated cardboard astronaut suit, pushes off his bed as glowing golden constellation pathways light up around him. He catches a floating star in a glass jar, smiling with profound wonder and peace as a friendly comic-drawn moon winks warmly in the cosmic background. Vibrant celestial purples, amber starlight, dynamic comic line art, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Gentle wonder] Rest your heart: God has plans of peace for you, to give you a bright future and an unstoppable hope! Jeremiah 29:11.",
     backgroundAudio: "Dreamy acoustic guitar with celestial music box arpeggios at -18dB.",
     subtitles: {
@@ -89,7 +89,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Pip, a golden retriever puppy with oversized paws and a comical superhero mask, wagging his tail with courage.",
     location: "A charming vintage living room with cozy fireplace embers and warm wood floorboards.",
     videoPrompt: "A high-end 3D character animation in 9:16 vertical format. Pip the golden puppy stands bravely on top of a velvet armchair, his red cape fluttering in a cozy breeze. A dark storm outside the window vanishes into glorious golden sunset rays. Pip places a confident paw on his heart, looking straight into the lens with big, soulful hazel puppy eyes filled with comfort and fearless joy. Hyper-detailed fur texture, cinematic lighting, 8K render, perfect portrait framing.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Comforting & bold] Fear not today! The Lord is with you; He will hold your right hand and uphold you with His righteous power! Isaiah 41:10.",
     backgroundAudio: "Warm orchestral strings with soft acoustic piano and gentle glockenspiel at -18dB.",
     subtitles: {
@@ -124,7 +124,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Milo, a friendly handcrafted clay chameleon wearing tiny round spectacle glasses and a bowtie.",
     location: "A vibrant artist's studio with colorful paint jars, sunflowers, and sunlit sketchpads.",
     videoPrompt: "A tactile, charming claymation-style 3D animation in 9:16 vertical ratio. Milo the chameleon looks in a mirror with a hand-painted frame. At first he giggles shyly, then his textured clay scales glow with brilliant golden, turquoise, and magenta hues. He smiles happily with cheerful clay eye-rolls and gives a joyful thumbs-up to the viewer. Warm textured stop-motion aesthetic, studio depth of field, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Joyful celebration] You are not an accident! You are fearfully, wonderfully, and marvelously made by the Creator of the universe! Psalm 139:14.",
     backgroundAudio: "Bouncy acoustic bassline with joyful marimba and light wooden percussion at -18dB.",
     subtitles: {
@@ -159,7 +159,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Barnaby, an ultra-fluffy cartoon lamb with smiling eyes and soft curly wool.",
     location: "Emerald rolling hillside dotted with blooming wildflowers beside a crystal-clear sparkling brook.",
     videoPrompt: "A serene and funny 3D character animation in 9:16 vertical format. Barnaby the round fluffy lamb happily bounces across lush green grass, nibbling a buttercup flower with a goofy smile. He flops down playfully onto a cloud-soft mossy bank beside quiet shimmering waters, sighing with blissful contentment as gentle butterfly flutters around his nose. Soft morning golden hour lighting, rich textures, 8K photorealistic stylization.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Serene & sweet] The Lord is your Shepherd: you shall not lack any good thing! Lie down in His peaceful green pastures today. Psalm 23:1.",
     backgroundAudio: "Gentle harp arpeggios with soothing cello and flowing brook ambience at -18dB.",
     subtitles: {
@@ -194,7 +194,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Ollie, an expressive cartoon sea otter wearing a cheerful sailor collar, with whiskers twitching in laughter.",
     location: "A crystal turquoise lagoon with warm sunlight rippling across gentle ocean waves.",
     videoPrompt: "A high-energy, heartwarming cartoon 9:16 vertical animation. Ollie the otter floats on his back in clear blue water, clapping his paws excitedly as sparkling bubbles and colorful confetti rise toward the sky. He rolls over, splashing playful water droplets toward the screen, his face radiating uncontainable giggles and bubbly joy. Vibrant oceanic palette, fluid 60fps animation, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bright & enthusiastic] Let your heart smile today! For the joy of the Lord is your strength, your shield, and your song! Nehemiah 8:10.",
     backgroundAudio: "Upbeat acoustic guitar strumming with cheerful whistle tune and handclaps at -18dB.",
     subtitles: {
@@ -229,7 +229,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Ezra, an adorable young golden eagle with determined amber eyes and fluffy crest feathers.",
     location: "Majestic sun-kissed mountain canyon with sweeping clouds and glowing golden sunrise horizons.",
     videoPrompt: "A breathtaking and comedic 3D animation in 9:16 vertical portrait. Ezra the baby eaglet stands at the edge of a mountain cliff, stretching his fluffy wings. A golden gust of heavenly wind catches him; his eyes light up in astonishment as he glides smoothly into the glowing sky, doing a playful mid-air loop and soaring high above the clouds with triumphant joy. Dramatic sun rays, cinematic mountain depth, 8K render.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Inspiring & majestic] You will not grow weary! Wait upon the Lord today, and you will renew your strength and soar high like eagles! Isaiah 40:31.",
     backgroundAudio: "Sweeping cinematic orchestral strings with uplifting brass swell and acoustic piano at -18dB.",
     subtitles: {
@@ -264,7 +264,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Sammy, a round cute animated seed with big heroic eyes, wearing boxing gloves and an energetic smile.",
     location: "A dramatic rocky mountain pass with comic-book dynamic halftone dots and bold visual energy.",
     videoPrompt: "A dynamic comic-book stylized 3D animation in 9:16 vertical ratio. Sammy the tiny mustard seed stands confidently on a stone ledge. When a shadow approaches, Sammy does a comical superhero pose, and a brilliant shield of divine light surrounds him. The shadow transforms into a shower of colorful blooming daisies. Sammy dusts off his gloves with a cheerful wink. Bold comic outlines, vibrant punchy colors, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Bold & triumphant] Stand tall today! If God is for you, who can ever be against you? You are more than a conqueror! Romans 8:31.",
     backgroundAudio: "Triumphant horn fanfare with punchy acoustic groove and energetic bassline at -18dB.",
     subtitles: {
@@ -299,7 +299,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Penny, an adorable chubby brown-and-cream sparrow wearing a cozy knitted scarf.",
     location: "A sunlit blossoming cherry apple branch overlooking misty peaceful morning meadows.",
     videoPrompt: "A cozy, calming 3D character animation in 9:16 vertical portrait. Penny the tiny sparrow perches on a blooming apple branch. She unbuckles a tiny brown suitcase; out floats a stream of rainbow bubbles that pop into soft sparkles in the morning air. Penny exhales deeply, tucks her head contentedly into her fluffy feathers, and smiles with pure tranquil peace. Golden morning bokeh, soft depth of field, 8K photorealistic render.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Gentle & peaceful] Let go of anxiety today. The peace of God, which surpasses all human understanding, is guarding your heart and mind right now. Philippians 4:6-7.",
     backgroundAudio: "Gentle acoustic fingerpicking guitar with soft ambient wind chimes at -18dB.",
     subtitles: {
@@ -334,7 +334,7 @@ export const AFFIRMATIONS_1_TO_10: ShortsBlueprint[] = [
     character: "Archie, a lovable pastel-gray baby elephant with oversized ears, and Daisy, a bright blue cheerful canary.",
     location: "A sun-drenched savannah watering hole with soft acacia trees under an amber sunset.",
     videoPrompt: "A heartwarming 3D animated scene in 9:16 vertical composition. Archie the cute little elephant sits peacefully beside a golden watering hole. Daisy the tiny bluebird sings sweet musical notes that float visibly as glowing golden butterflies. Archie wraps his trunk gently around a flower, swaying joyfully to the song with a tender smile of pure security. Warm golden rim lighting, soft painterly textures, 8K ultra HD, safe zone centered.",
-    voiceProfile: "British young female voice (warm, witty, joyful, comforting, energetic yet serene British accent with crisp articulation and radiant cadence).",
+    voiceProfile: "Character-matched voice (Male, Female, or Child)",
     audioScript: "[Tender & uplifting] Remember this truth: God is with you, and He rejoices over you with gladness and sings songs of love over your life! Zephaniah 3:17.",
     backgroundAudio: "Soothing acoustic piano and gentle violin melody with soft ambient lullaby chimes at -18dB.",
     subtitles: {
