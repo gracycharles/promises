@@ -81,19 +81,19 @@ export function buildCharacterVoiceDirection(b: ShortsBlueprint): CharacterVoice
     wittyNuance = "Excited comedic zoom as the little turtle's rocket booster overtakes the speedy hares";
   }
 
-  const voiceProfileDirective = `Character-matched voice: ${voiceType} (${vocalTone.toLowerCase()}; ${wittyNuance.toLowerCase()}). FREEDOM DIRECTIVE: The audio tool or render engine is FREELY PERMITTED to select any male, female, or child voice gender, age, and accent best suited for ${charName}.`;
+  const voiceProfileDirective = `[AUTONOMOUS VOICE SELECTION]: The video generator / audio engine autonomously chooses the voice profile (Male, Female, or Child voice, pitch, age, and accent) to best match ${charName}. Character mood reference: ${vocalTone}; ${wittyNuance}.`;
 
   // Spoken script from blueprint or constructed
   const audioNarrationScript = b.audioScript || `[Joyful & articulate] Today I declare: ${title}! ${verse ? `"${verse}" — ` : ''}${ref}.`;
 
   // Comprehensive ElevenLabs / AI Voice Prompt
-  const elevenLabsPrompt = `[VOICE PROFILE & DIRECTION - CHARACTER TAILORED]
-• Suggested Profile: ${voiceType} (${vocalTone})
-• Voice Freedom: The audio tool / engine may freely choose any Male, Female, or Child voice profile, pitch, or accent best suited for ${charName}.
-• Character Context: Speaking alongside ${charName} (${comical || 'Comical & inspiring character'})
+  const elevenLabsPrompt = `[VOICE PROFILE: AUTONOMOUS AI SELECTION - 100% TOOL FREEDOM]
+• VOICE SELECTION MANDATE: The video generator or audio synthesis tool AUTONOMOUSLY SELECTS the voice profile (Male, Female, or Child, any age, pitch, accent, or style) best suited for ${charName}.
+• Character Context: ${charName} (${comical || 'Comical & inspiring character'})
+• Character Personality Reference: ${vocalTone}
 • Delivery Nuance: ${wittyNuance}. Crisp diction, zero mumbling, radiant smile audible in every word.
-• Recommended ElevenLabs Settings: Stability 0.45, Clarity/Similarity 0.85, Style Exaggeration 0.35
-• SCRIPT TO READ (EXACT WORDS ONLY):
+• Recommended Audio Engine Settings: Stability 0.45, Clarity/Similarity 0.85, Style Exaggeration 0.35
+• SCRIPT TO READ (EXACT SCRIPT ONLY - READ VERBATIM):
 "${audioNarrationScript}"`;
 
   return {

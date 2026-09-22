@@ -317,8 +317,8 @@ Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Stud
 [DYNAMIC CAMERA MOTION]:
 - Dynamic 9:16 vertical camera push-in tracking shot, sweeping smoothly around the character as they celebrate with exuberant comedic energy and heartwarming faith.
 
-[INTEGRATED AUDIO & VOICEOVER DIRECTIVE]:
-- Speaker: Character-matched voice (warm, witty, joyful, crisp articulation).
+[INTEGRATED AUDIO & VOICEOVER DIRECTIVE - AUTONOMOUS VOICE SELECTION]:
+- Speaker Selection: Video generator autonomously chooses the voice profile (Male, Female, or Child, any age/accent) to match the character with warm, witty, joyful, and articulate delivery.
 - Exact Spoken Script: "${audioScript}"`;
 }
 

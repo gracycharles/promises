@@ -18,7 +18,7 @@ Delivering short, effective, joyful, and Bible-based Christian affirmations that
 ✨ What Makes Our Shorts Special:
 • Innovative & Comical Characters: 3D Pixar-style animated friends, comic-strip heroes, cheerful talking animals, and whimsical personalities that make eternal Bible truths heartwarming, memorable, and fun.
 • Purely Bible-Based & Hope-Filled: Every affirmation is anchored directly in verified Holy Scripture (NKJV canonical verses).
-• Character-Matched Narration: Crisp, articulate, witty, and radiantly cheerful voices tailored per character (Male, Female, or Child) with full AI tool freedom.
+• Character-Matched Narration: Video generation engine autonomously chooses the voice profile (Male, Female, or Child) tailored to each character with full AI tool freedom.
 • Universal Uplift: Wholesome, clean family content designed to conquer fear, bring laughter, and build bold faith in under 60 seconds!
 
 📖 “For I know the thoughts that I think toward you, says the Lord, thoughts of peace and not of evil, to give you a future and a hope.” — Jeremiah 29:11
@@ -119,7 +119,7 @@ export const ChannelProfileModal: React.FC<ChannelProfileModalProps> = ({ isOpen
                 </div>
                 <span className="text-[11px] text-stone-400 flex items-center gap-1">
                   <Volume2 className="w-3 h-3 text-cyan-400" />
-                  <span>Character-Matched Voice</span>
+                  <span>Video Gen Chooses Voice Profile</span>
                 </span>
               </div>
             </div>

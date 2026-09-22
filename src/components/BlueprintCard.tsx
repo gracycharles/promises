@@ -611,9 +611,9 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                 <Mic className="w-4 h-4" />
               </div>
               <h3 className="text-xs sm:text-sm font-bold text-stone-100 tracking-wide uppercase font-mono flex items-center gap-2 flex-wrap">
-                <span>🎙 Character-Matched Voice & Audio</span>
+                <span>🎙 Video Gen Chooses Voice Profile & Audio</span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-semibold">
-                  Character-Matched Voice
+                  Autonomous Voice Selection
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-stone-900 border border-stone-800 text-stone-400 font-normal">
                   {isAudioOpen ? 'Hide' : 'Show Details & Audio Player'}
@@ -673,10 +673,12 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                       </div>
                     </div>
 
-                    <div>
-                      <span className="text-stone-400 font-mono uppercase text-[10px] block font-bold">Full Voice Profile Directive:</span>
-                      <p className="text-emerald-300 font-medium font-serif mt-0.5 text-xs sm:text-sm bg-stone-950 p-2.5 rounded-lg border border-stone-800">
-                        {blueprint.voiceProfile || voiceDir.voiceProfileDirective}
+                    <div className="p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/30 space-y-1">
+                      <span className="text-emerald-300 font-mono uppercase text-[10px] block font-bold flex items-center gap-1.5">
+                        <span>🎙</span> Autonomous Voice Selection Directive:
+                      </span>
+                      <p className="text-emerald-200/90 text-xs leading-relaxed">
+                        The video generation tool (Runway Gen-3 / Kling / Sora / Luma) or audio engine <strong>autonomously chooses the voice profile</strong> (Male, Female, or Child voice, pitch, age, accent, and style) that best fits the on-screen character.
                       </p>
                     </div>
 
@@ -706,13 +708,13 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                         "{blueprint.audioScript || voiceDir.audioNarrationScript}"
                       </p>
                       <div className="flex items-center justify-between gap-2 p-2 rounded bg-emerald-950/40 border border-emerald-500/20 text-[11px] text-emerald-300/90 leading-relaxed font-sans">
-                        <span><strong className="text-emerald-200 font-semibold">DIRECTIVE:</strong> Character-matched voice (Male, Female, or Child) with warm, witty, joyful, and articulate delivery. Zero unscripted words.</span>
+                        <span><strong className="text-emerald-200 font-semibold">DIRECTIVE:</strong> Video generator autonomously selects voice profile (Male, Female, or Child) with warm, witty, joyful, and articulate delivery. Zero unscripted words.</span>
                         <button
                           onClick={() => copyToClipboard(voiceDir.elevenLabsPrompt, 'tts-prompt')}
                           className="px-2 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 font-mono text-[10px] font-bold border border-emerald-500/30 shrink-0 transition-colors"
-                          title="Copy ElevenLabs Prompt"
+                          title="Copy Voice Synthesis Prompt"
                         >
-                          {copiedSection === 'tts-prompt' ? 'Copied Prompt!' : 'Copy ElevenLabs Prompt'}
+                          {copiedSection === 'tts-prompt' ? 'Copied Prompt!' : 'Copy Voice Prompt'}
                         </button>
                       </div>
                     </div>

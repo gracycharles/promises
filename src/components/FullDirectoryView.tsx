@@ -266,7 +266,7 @@ export const FullDirectoryView: React.FC<FullDirectoryViewProps> = ({
                 <button
                   onClick={(e) => copyItemText(e, formatAudioOnlyText(item), `dir-audio-${item.id}`)}
                   className="flex items-center gap-1 px-2 py-1 rounded bg-emerald-950/30 hover:bg-emerald-900/40 text-emerald-300 text-[10px] font-semibold border border-emerald-500/30 transition-all"
-                  title="Copy Character-Tailored Voice Narration Prompt"
+                  title="Copy Audio Prompt (Video Gen Chooses Voice Profile)"
                 >
                   {copiedKey === `dir-audio-${item.id}` ? (
                     <>

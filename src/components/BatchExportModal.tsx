@@ -58,7 +58,7 @@ CHRISTIAN AFFIRMATIONS SHORTS PRODUCTION BLUEPRINTS
 Channel: Christian Affirmations Shorts (@ChristianAffirmationsShorts)
 Content: Joyful, Positive, Bible-Based Christian Affirmations
 Target Audience: Kids to Elderly (Universal Hope & Joy)
-Narrator: Character-Matched Voice (Male, Female, or Child — Tailored per Hero)
+Narrator: Video Gen Autonomously Chooses Voice Profile (Male, Female, or Child — Tailored per Hero)
 Animation Styles: 3D Pixar, Cartoon Comic, Claymation, Whimsical Anime, Storybook
 Bible Version: NKJV (New King James Version)
 Export Mode: ${getExportModeLabel(exportMode)}
@@ -151,7 +151,7 @@ ${formatYouTubeOnlyText(b)}`;
       youtubeHandle: "@ChristianAffirmationsShorts",
       theme: "Joyful, Hope-Filled, Bible-Based Christian Affirmations",
       targetAudience: "Kids to Elderly",
-      voice: "Character-Matched Voice (Male, Female, or Child)",
+      voice: "Video Gen Autonomously Chooses Voice Profile (Male, Female, or Child)",
       batch: selectedBatch,
       count: filteredBlueprints.length,
       blueprints: filteredBlueprints

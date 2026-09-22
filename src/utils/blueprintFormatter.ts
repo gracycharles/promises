@@ -43,7 +43,7 @@ Target Duration: 10.0 Seconds | Format: 9:16 Vertical Portrait (1080x1920) | Out
 
 [COMPULSORY TRI-OUTPUT MANDATE FOR ALL GENERATED VIDEOS - NO MISTAKES PERMITTED]:
 - COMPULSORY 1 (VIDEO): 3D Animated Video Generation (9:16 portrait, full-bleed 60fps, 3D Pixar character acting, vivid lighting, zero tears).
-- COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (Character-matched voice reading the exact 10.0s spoken script + background music bed).
+- COMPULSORY 2 (AUDIO): Integrated Audio & Voiceover Narration (Video Generator AUTONOMOUSLY CHOOSES the voice profile—male, female, or child—to best match ${b.characterName || b.character}; reads exact 10.0s spoken script + background music bed).
 - COMPULSORY 3 (TEXT OVERLAY): Burned-In Subtitle Text Overlay (Center-upper safe band y=450-850, high-contrast stylish typography, 100% clear of bottom 600px Shorts UI).
 
 [MASTER AI VIDEO GENERATION PROMPT - PASTE INTO RUNWAY GEN-3 / KLING / LUMA / SORA]:
@@ -55,9 +55,9 @@ ${b.videoPrompt}
 - Comedic Element: ${b.comicalElement}
 ${expr ? `- Character Acting Nuance: ${expr.expression}\n- Scene Atmosphere: ${expr.sceneAtmosphere}` : ''}
 
-[EXTERNAL AI VOICE & NARRATION DIRECTIVE (CHARACTER-MATCHED VOICE)]:
-- Voice Profile: ${voiceDir.voiceProfileDirective}
-- Vocal Persona: ${voiceDir.vocalTone}
+[EXTERNAL AI VOICE & NARRATION DIRECTIVE (VIDEO GEN AUTONOMOUSLY CHOOSES VOICE PROFILE)]:
+- Voice Profile Mandate: VIDEO GENERATION TOOL AUTONOMOUSLY CHOOSES THE VOICE PROFILE (Male, Female, or Child voice, pitch, age, accent, and style) to perfectly match ${b.characterName || b.character}.
+- Character Personality Reference: ${voiceDir.vocalTone}
 - Witty Nuance: ${voiceDir.wittyComedicNuance}
 - Exact Spoken Script (Strictly 10.0s): "${b.audioScript || voiceDir.audioNarrationScript}"
 - Background Atmosphere: ${b.backgroundAudio}
@@ -96,7 +96,7 @@ export function formatVideoPromptOnlyText(b: ShortsBlueprint): string {
   const typo = computeOverlayTypography(line1Affirmation, line2Scripture, line3Ref);
 
   return `🎥 COMPULSORY TRI-OUTPUT VIDEO GENERATION PROMPT (9:16 VERTICAL - PORTRAIT 1080x1920):
-[COMPULSORY MANDATE: Output MUST include Video Animation + Synchronized Character-Matched Voice Audio + Burned-In Safe-Zone Subtitle Text Overlay]
+[COMPULSORY MANDATE: Output MUST include Video Animation + Synchronized Voice Audio (VIDEO GEN AUTONOMOUSLY CHOOSES VOICE PROFILE TO MATCH CHARACTER) + Burned-In Safe-Zone Subtitle Text Overlay]
 
 ${b.videoPrompt}
 
@@ -108,13 +108,13 @@ ${typo.promptAdditionDirective}`;
  */
 export function formatAudioOnlyText(b: ShortsBlueprint): string {
   const dir = buildCharacterVoiceDirection(b);
-  return `🎙 CHARACTER-TAILORED AUDIO & VOICEOVER PROMPT:
+  return `🎙 CHARACTER AUDIO & VOICEOVER PROMPT (VIDEO GEN AUTONOMOUSLY CHOOSES VOICE PROFILE):
+- Voice Selection Mandate: THE VIDEO / AUDIO GENERATOR AUTONOMOUSLY CHOOSES THE VOICE PROFILE (Male, Female, or Child voice, pitch, age, accent, and style) to best bring ${dir.characterName} to life.
 - Character: ${dir.characterName}
-- Vocal Persona & Nuance: ${dir.vocalTone}
+- Suggested Character Vibe: ${dir.vocalTone}
 - Narration Style: ${dir.narrationStyle}
-- Voice Profile Directive: ${dir.voiceProfileDirective}
 - Scripted Spoken Narration (Strictly 10.0s): "${b.audioScript || dir.audioNarrationScript}"
-- CRITICAL DIRECTIVE: Read ONLY the exact scripted text above in a clear, articulate, character-matched voice (male, female, or child). Zero unscripted words, no intro/outro, no commentary.
+- CRITICAL DIRECTIVE: Read ONLY the exact scripted text above. Zero unscripted words, no intro/outro, no background theological commentary.
 - Background Audio: ${b.backgroundAudio}
 
 🎧 ELEVENLABS / AI VOICE SYNTHESIS DIRECTIVE:
