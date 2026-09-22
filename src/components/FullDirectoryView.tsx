@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ShortsBlueprint } from '../types';
-import { Sparkles, ArrowRight, BookOpen, Search, Video, Hash, Copy, Check, Heart, Smile, UserCheck, Mic } from 'lucide-react';
+import { Sparkles, ArrowRight, BookOpen, Search, Video, Hash, Copy, Check, Heart, Smile, UserCheck, Mic, Users } from 'lucide-react';
 import { 
   formatVideoGenerationOnlyText, 
   formatYouTubeOnlyText,
@@ -60,7 +60,7 @@ export const FullDirectoryView: React.FC<FullDirectoryViewProps> = ({
           <Sparkles className="w-5 h-5 text-amber-400" />
           <div>
             <h2 className="text-base sm:text-lg font-bold text-stone-100 font-serif">
-              50 Christian Affirmations Shorts Directory
+              {verifiedBlueprints.length} Christian Affirmations Shorts Directory
             </h2>
             <p className="text-xs text-stone-400 font-sans">
               Joyful, positive, Bible-based affirmations for YouTube Shorts spanning cartoon, comic, and 3D animated characters (Kids to Elderly)
@@ -192,12 +192,24 @@ export const FullDirectoryView: React.FC<FullDirectoryViewProps> = ({
                   <UserCheck className="w-3 h-3 text-amber-400" />
                   <span className="font-semibold text-amber-200 truncate max-w-[150px]">{item.characterName || item.character}</span>
                 </span>
+                {item.supportingCharacters && item.supportingCharacters.length > 0 && (
+                  <span className="flex items-center gap-1 px-2 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-[10px]">
+                    <Users className="w-3 h-3 text-cyan-400" />
+                    <span>+{item.supportingCharacters.length} Sidekicks</span>
+                  </span>
+                )}
                 {item.characterStyle && (
                   <span className="px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40 text-cyan-300 text-[10px]">
                     {item.characterStyle}
                   </span>
                 )}
               </div>
+
+              {item.supportingCharacters && item.supportingCharacters.length > 0 && (
+                <div className="text-[10px] text-cyan-200/90 font-mono bg-cyan-950/20 p-1.5 rounded-lg border border-cyan-500/20 truncate">
+                  <span className="text-cyan-400 font-bold">Cast:</span> {item.supportingCharacters.map(sc => sc.name).join(' • ')}
+                </div>
+              )}
 
               {item.comicalElement && (
                 <div className="text-[11px] text-amber-300/90 font-sans flex items-start gap-1 bg-amber-950/20 p-2 rounded-lg border border-amber-500/20 line-clamp-2">

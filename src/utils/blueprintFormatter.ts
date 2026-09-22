@@ -20,8 +20,11 @@ export function formatMidjourneyPrompt(b: ShortsBlueprint): string {
   const char = b.character || "Hero animated character";
   const comical = b.comicalElement || "A charming animated character with a bright infectious smile.";
   const location = b.location || "A vibrant sunlit landscape";
+  const sidekicks = b.supportingCharacters && b.supportingCharacters.length > 0
+    ? ` Accompanied by cheerful animated sidekicks: ${b.supportingCharacters.map(sc => `${sc.name} (${sc.appearance})`).join(', ')}.`
+    : '';
   
-  return `3D animation keyframe portrait of ${char}, ${charStyle} feature film character design, ${comical}. Set in ${location}. Eye-popping vibrant color palette, volumetric golden morning lighting, ray-traced subsurface scattering, Octane render 8K resolution, 9:16 aspect ratio vertical portrait composition --ar 9:16 --v 6.0 --style raw --stylize 250`;
+  return `3D animation keyframe portrait of ${char}, ${charStyle} feature film character design, ${comical}.${sidekicks} Set in ${location}. Eye-popping vibrant color palette, volumetric golden morning lighting, ray-traced subsurface scattering, Octane render 8K resolution, 9:16 aspect ratio vertical portrait composition --ar 9:16 --v 6.0 --style raw --stylize 250`;
 }
 
 /**
@@ -52,7 +55,7 @@ ${b.videoPrompt}
 [CHARACTER & COMEDIC ACTING DETAILS]:
 - Main Character: ${b.character} (${b.characterStyle || '3D Pixar Animation'})
 - Character Name: ${b.characterName || b.character || 'Animated Hero'}
-- Comedic Element: ${b.comicalElement}
+${b.supportingCharacters && b.supportingCharacters.length > 0 ? `- Supporting Characters (Sidekicks & Companions):\n  ${b.supportingCharacters.map(sc => `* ${sc.name} (${sc.role}): ${sc.appearance}. Comedic action: ${sc.comedicInteraction}`).join('\n  ')}\n` : ''}- Comedic Element: ${b.comicalElement}
 ${expr ? `- Character Acting Nuance: ${expr.expression}\n- Scene Atmosphere: ${expr.sceneAtmosphere}` : ''}
 
 [EXTERNAL AI VOICE & NARRATION DIRECTIVE (VIDEO GEN AUTONOMOUSLY CHOOSES VOICE PROFILE)]:

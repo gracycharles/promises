@@ -10,7 +10,7 @@ interface ShortsNavigatorModalProps {
   onSelectShort: (blueprint: ShortsBlueprint) => void;
 }
 
-type BatchTab = 'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50';
+type BatchTab = 'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50' | '51-60' | '61-70' | '71-80' | '81-90' | '91-100';
 
 export const ShortsNavigatorModal: React.FC<ShortsNavigatorModalProps> = ({
   isOpen,
@@ -52,7 +52,12 @@ export const ShortsNavigatorModal: React.FC<ShortsNavigatorModalProps> = ({
   useEffect(() => {
     if (currentId > 0 && currentId <= blueprints.length) {
       let b: BatchTab = '1-10';
-      if (currentId > 40) b = '41-50';
+      if (currentId > 90) b = '91-100';
+      else if (currentId > 80) b = '81-90';
+      else if (currentId > 70) b = '71-80';
+      else if (currentId > 60) b = '61-70';
+      else if (currentId > 50) b = '51-60';
+      else if (currentId > 40) b = '41-50';
       else if (currentId > 30) b = '31-40';
       else if (currentId > 20) b = '21-30';
       else if (currentId > 10) b = '11-20';
@@ -198,7 +203,19 @@ export const ShortsNavigatorModal: React.FC<ShortsNavigatorModalProps> = ({
           {/* Batch Filter Buttons */}
           <div className="flex flex-wrap items-center gap-1.5 pt-1">
             <span className="text-[11px] font-mono text-stone-400 mr-1 uppercase">Batch:</span>
-            {(['all', '1-10', '11-20', '21-30', '31-40', '41-50'] as BatchTab[]).map((tab) => (
+            {([
+              'all',
+              '1-10',
+              '11-20',
+              '21-30',
+              '31-40',
+              '41-50',
+              '51-60',
+              '61-70',
+              '71-80',
+              '81-90',
+              '91-100'
+            ] as BatchTab[]).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveBatch(tab)}
@@ -298,6 +315,11 @@ export const ShortsNavigatorModal: React.FC<ShortsNavigatorModalProps> = ({
                           <span className="text-amber-400/90">{b.scriptureRef || b.englishRef}</span>
                           <span>•</span>
                           <span className="text-cyan-300">{b.characterName || b.character}</span>
+                          {b.supportingCharacters && b.supportingCharacters.length > 0 && (
+                            <span className="text-[10px] text-cyan-400/90 font-mono bg-cyan-950/60 px-1.5 py-0.2 rounded border border-cyan-800/40">
+                              +{b.supportingCharacters.length} sidekicks
+                            </span>
+                          )}
                           <span className="hidden md:inline">• {b.location}</span>
                         </div>
                       </div>

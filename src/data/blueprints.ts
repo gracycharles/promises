@@ -1,12 +1,17 @@
 import { ShortsBlueprint } from '../types';
 import { ALL_50_AFFIRMATIONS_BLUEPRINTS } from './affirmations50';
+import { AFFIRMATIONS_51_TO_100 } from './affirmations51to100';
 import { enrichBlueprintWithVerification } from './scriptureVerifications';
 import { generateCharacterExpression, buildInculcatedVideoPrompt } from '../utils/characterExpressionEngine';
 import { buildCharacterVoiceDirection } from '../utils/narrationEngine';
 import { cleanScriptureRef } from '../utils/overlayTypographyEngine';
 import { getFormattedYouTubeDescription } from '../utils/blueprintFormatter';
+import { getSupportingCharactersForBlueprint } from '../utils/supportingCharactersEngine';
 
-const RAW_BLUEPRINTS: ShortsBlueprint[] = ALL_50_AFFIRMATIONS_BLUEPRINTS;
+const RAW_BLUEPRINTS: ShortsBlueprint[] = [
+  ...ALL_50_AFFIRMATIONS_BLUEPRINTS,
+  ...AFFIRMATIONS_51_TO_100,
+];
 
 const TARGET_ALGORITHM_TAGS = [
   'ChristianAffirmations',
@@ -54,6 +59,9 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
   // Character-matched voice profile tailored to the specific character
   const characterMatchingVoice = raw.voiceProfile || voiceDir.voiceProfileDirective;
   const characterMatchingScript = raw.audioScript || voiceDir.audioNarrationScript;
+  const supportingChars = raw.supportingCharacters && raw.supportingCharacters.length > 0
+    ? raw.supportingCharacters
+    : getSupportingCharactersForBlueprint(raw.id, raw.character, raw.category, raw.comicalElement);
 
   const enriched: ShortsBlueprint = {
     ...raw,
@@ -68,6 +76,7 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
     voiceProfile: characterMatchingVoice,
     audioScript: characterMatchingScript,
     characterExpression: charExpr,
+    supportingCharacters: supportingChars,
     videoPrompt: raw.videoPrompt || videoPromptInculcated,
     subtitles: {
       line1Affirmation,
@@ -89,5 +98,5 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
 
 export const INITIAL_BLUEPRINTS: ShortsBlueprint[] = RAW_BLUEPRINTS.map(enrichBlueprintWithExpressions);
 
-export const TOTAL_PRAISES_TARGET = 50;
+export const TOTAL_PRAISES_TARGET = 100;
 export const CURRENT_VERIFIED_COUNT = INITIAL_BLUEPRINTS.length;

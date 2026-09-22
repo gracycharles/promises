@@ -28,7 +28,7 @@ import {
   ListFilter
 } from 'lucide-react';
 
-type BatchFilter = 'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50';
+type BatchFilter = 'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50' | '51-60' | '61-70' | '71-80' | '81-90' | '91-100';
 type StudioViewMode = 'focus' | 'list';
 
 export default function App() {
@@ -113,7 +113,12 @@ export default function App() {
     if (selectedBatch !== 'all') {
       const id = blueprint.id;
       let targetBatch: BatchFilter = '1-10';
-      if (id > 40) targetBatch = '41-50';
+      if (id > 90) targetBatch = '91-100';
+      else if (id > 80) targetBatch = '81-90';
+      else if (id > 70) targetBatch = '71-80';
+      else if (id > 60) targetBatch = '61-70';
+      else if (id > 50) targetBatch = '51-60';
+      else if (id > 40) targetBatch = '41-50';
       else if (id > 30) targetBatch = '31-40';
       else if (id > 20) targetBatch = '21-30';
       else if (id > 10) targetBatch = '11-20';
@@ -286,12 +291,17 @@ export default function App() {
                       }}
                       className="bg-transparent text-xs text-stone-200 font-semibold focus:outline-none cursor-pointer pr-1"
                     >
-                      <option value="all" className="bg-stone-900 text-stone-100">All 50 Affirmations</option>
+                      <option value="all" className="bg-stone-900 text-stone-100">All 100 Affirmations</option>
                       <option value="1-10" className="bg-stone-900 text-stone-100">#1–10: Protection & Refuge</option>
                       <option value="11-20" className="bg-stone-900 text-stone-100">#11–20: Strength & Courage</option>
                       <option value="21-30" className="bg-stone-900 text-stone-100">#21–30: Peace & Calm</option>
                       <option value="31-40" className="bg-stone-900 text-stone-100">#31–40: Future & Hope</option>
                       <option value="41-50" className="bg-stone-900 text-stone-100">#41–50: Joy & Victory</option>
+                      <option value="51-60" className="bg-stone-900 text-stone-100">#51–60: Renewal & Faithfulness</option>
+                      <option value="61-70" className="bg-stone-900 text-stone-100">#61–70: Radiant Light & Song</option>
+                      <option value="71-80" className="bg-stone-900 text-stone-100">#71–80: Grace, Praise & Truth</option>
+                      <option value="81-90" className="bg-stone-900 text-stone-100">#81–90: Abundance & Rest</option>
+                      <option value="91-100" className="bg-stone-900 text-stone-100">#91–100: Grand Finale Celebrations</option>
                     </select>
                   </div>
 
@@ -305,7 +315,7 @@ export default function App() {
                         max={INITIAL_BLUEPRINTS.length}
                         value={jumpInputVal}
                         onChange={(e) => setJumpInputVal(e.target.value)}
-                        placeholder="1-50"
+                        placeholder="1-100"
                         className="w-full bg-stone-950 border border-stone-800 rounded-lg pl-5 pr-1 py-1 text-xs font-mono text-amber-300 placeholder-stone-600 focus:outline-none focus:border-amber-500"
                       />
                     </div>

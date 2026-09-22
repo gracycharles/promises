@@ -1,4 +1,5 @@
 import { ShortsBlueprint, CharacterExpression } from '../types';
+import { getSupportingCharactersForBlueprint } from './supportingCharactersEngine';
 
 /**
  * Character Expression & Scene Inculcation Engine
@@ -301,13 +302,23 @@ export function buildInculcatedVideoPrompt(blueprint: ShortsBlueprint, expr: Cha
   const ref = blueprint.scriptureRef || blueprint.englishRef || "";
   const audioScript = blueprint.audioScript || `Today I declare: ${title}!`;
 
+  const supportingChars = blueprint.supportingCharacters && blueprint.supportingCharacters.length > 0
+    ? blueprint.supportingCharacters
+    : getSupportingCharactersForBlueprint(blueprint.id, blueprint.character, blueprint.category, blueprint.comicalElement);
+
+  const supportingCharsText = supportingChars.map(sc => 
+    `* ${sc.name} (${sc.role}): ${sc.appearance}. Action: ${sc.comedicInteraction}`
+  ).join('\n  ');
+
   return `🎬 HOLLYWOOD CREATION RANGE 3D ANIMATION MASTER PROMPT (9:16 VERTICAL - 1080x1920 PORTRAIT - 10 SECONDS):
 Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Studio grade, Octane Render 8K, subsurface scattering, ray-traced dynamic lighting, 60fps cinematic fluidity).
 
 [CHARACTERS & MULTI-CHARACTER EXPRESSIVE ACTING]:
 - Main Hero Character: ${blueprint.character}. Lovable, highly appealing, cartoony character with expressive oversized sparkling eyes, soft fluffy textures, and vibrant costume details.
 - Facial Expression Directive (STRICT): ${expr.expression}. ${expr.gesturePosture}. (EXPLICIT SAFETY MANDATE: STRICTLY NO TEARS, NO CRYING, NO WATERY EYES, NO SADNESS OR GRIMACE; character eyes MUST be dry, bright, wide, and sparkling with joyful determination!).
-- Multi-Character Comedic Interaction: ${comical}. Whimsical animated companions and friendly sidekicks cheer, tumble, and celebrate alongside in endearing, slapstick cartoon joy!
+- Supporting Characters & Endearing Sidekicks (Multi-Character Scene):
+  ${supportingCharsText}
+- Multi-Character Comedic Interaction: ${comical}. Supporting characters actively interact, cheer, assist, and exchange high-fives and playful banter with the hero in slapstick cartoon joy!
 
 [SCENE, SETTING & EYE-POPPING VIVID COLOR PALETTE]:
 - Environment & Setting: ${blueprint.location}. ${expr.sceneAtmosphere}.
@@ -315,7 +326,7 @@ Style: ${charStyle} feature film quality (Pixar / DreamWorks / Illumination Stud
 - Atmospheric Lighting: Volumetric god-rays, floating shimmering dust glimmers, soft bloom, shallow depth-of-field, cinematic camera lighting.
 
 [DYNAMIC CAMERA MOTION]:
-- Dynamic 9:16 vertical camera push-in tracking shot, sweeping smoothly around the character as they celebrate with exuberant comedic energy and heartwarming faith.
+- Dynamic 9:16 vertical camera push-in tracking shot, sweeping smoothly around the hero and their animated supporting friends as they celebrate together with exuberant comedic energy and heartwarming faith.
 
 [INTEGRATED AUDIO & VOICEOVER DIRECTIVE - AUTONOMOUS VOICE SELECTION]:
 - Speaker Selection: Video generator autonomously chooses the voice profile (Male, Female, or Child, any age/accent) to match the character with warm, witty, joyful, and articulate delivery.

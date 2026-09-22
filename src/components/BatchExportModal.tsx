@@ -21,7 +21,9 @@ export const BatchExportModal: React.FC<BatchExportModalProps> = ({
   onClose,
   blueprints
 }) => {
-  const [selectedBatch, setSelectedBatch] = useState<'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50'>('all');
+  const [selectedBatch, setSelectedBatch] = useState<
+    'all' | '1-10' | '11-20' | '21-30' | '31-40' | '41-50' | '51-60' | '61-70' | '71-80' | '81-90' | '91-100'
+  >('all');
   const [exportMode, setExportMode] = useState<'all' | 'video-only' | 'youtube-only' | 'titles-only' | 'descriptions-only' | 'verification-only' | 'expressions-only' | 'nkjv-only'>('all');
   const [copied, setCopied] = useState(false);
   const [copiedType, setCopiedType] = useState<string | null>(null);
@@ -34,6 +36,11 @@ export const BatchExportModal: React.FC<BatchExportModalProps> = ({
     if (selectedBatch === '21-30') return b.id >= 21 && b.id <= 30;
     if (selectedBatch === '31-40') return b.id >= 31 && b.id <= 40;
     if (selectedBatch === '41-50') return b.id >= 41 && b.id <= 50;
+    if (selectedBatch === '51-60') return b.id >= 51 && b.id <= 60;
+    if (selectedBatch === '61-70') return b.id >= 61 && b.id <= 70;
+    if (selectedBatch === '71-80') return b.id >= 71 && b.id <= 80;
+    if (selectedBatch === '81-90') return b.id >= 81 && b.id <= 90;
+    if (selectedBatch === '91-100') return b.id >= 91 && b.id <= 100;
     return true;
   });
 
@@ -198,7 +205,19 @@ ${formatYouTubeOnlyText(b)}`;
         <div className="px-5 py-3 border-b border-stone-800 bg-stone-950/40 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="text-xs text-stone-400 font-medium mr-1">Select Batch:</span>
-            {(['all', '1-10', '11-20', '21-30', '31-40', '41-50'] as const).map((batch) => (
+            {([
+              'all',
+              '1-10',
+              '11-20',
+              '21-30',
+              '31-40',
+              '41-50',
+              '51-60',
+              '61-70',
+              '71-80',
+              '81-90',
+              '91-100'
+            ] as const).map((batch) => (
               <button
                 key={batch}
                 onClick={() => setSelectedBatch(batch)}

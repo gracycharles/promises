@@ -29,6 +29,13 @@ export interface PageData {
   praises: PraiseItem[];
 }
 
+export interface SupportingCharacter {
+  name: string;
+  role: string;
+  appearance: string;
+  comedicInteraction: string;
+}
+
 export interface CharacterExpression {
   expression: string;
   gesturePosture: string;
@@ -58,6 +65,7 @@ export interface ShortsBlueprint {
   comicalElement?: string;
   targetAudience?: string;
   character: string;
+  supportingCharacters?: SupportingCharacter[];
   location: string;
   videoPrompt: string;
   voiceProfile: string;

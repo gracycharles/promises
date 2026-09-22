@@ -21,7 +21,8 @@ import {
   Square,
   Radio,
   Heart,
-  Smile
+  Smile,
+  Users
 } from 'lucide-react';
 import { ShortsBlueprint } from '../types';
 import { 
@@ -444,6 +445,39 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                 <p className="text-stone-200 text-xs mt-0.5 leading-relaxed">
                   {blueprint.comicalElement}
                 </p>
+              </div>
+            </div>
+          )}
+
+          {/* 👥 Supporting Characters & Endearing Sidekicks */}
+          {blueprint.supportingCharacters && blueprint.supportingCharacters.length > 0 && (
+            <div className="bg-cyan-950/20 border border-cyan-500/30 rounded-xl p-3.5 text-xs space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="font-bold text-cyan-300 font-mono uppercase text-[10px] tracking-wider flex items-center gap-1.5">
+                  <Users className="w-3.5 h-3.5 text-cyan-400" />
+                  Supporting Characters & Sidekicks ({blueprint.supportingCharacters.length} Animated Companions):
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300">
+                  Multi-Character Cast
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {blueprint.supportingCharacters.map((char, idx) => (
+                  <div key={idx} className="bg-stone-900/90 border border-cyan-500/20 rounded-lg p-3 space-y-1">
+                    <div className="flex items-center justify-between gap-1.5">
+                      <span className="font-bold text-amber-200 text-xs">{char.name}</span>
+                      <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 rounded bg-cyan-900/50 text-cyan-300 border border-cyan-500/30">
+                        {char.role}
+                      </span>
+                    </div>
+                    <p className="text-stone-300 text-[11px] leading-relaxed">
+                      <strong className="text-stone-400 font-normal">Look:</strong> {char.appearance}
+                    </p>
+                    <p className="text-stone-300 text-[11px] leading-relaxed">
+                      <strong className="text-cyan-400/90 font-normal">Gag/Action:</strong> {char.comedicInteraction}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           )}
