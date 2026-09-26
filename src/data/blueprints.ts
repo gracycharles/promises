@@ -13,6 +13,32 @@ const RAW_BLUEPRINTS: ShortsBlueprint[] = [
   ...AFFIRMATIONS_51_TO_100,
 ];
 
+export const CORE_DEVOTIONAL_TAGS = [
+  'India',
+  'morning devotion',
+  'Christian devotion',
+  'praise',
+  'praises',
+  'Morning Devotion',
+  'Christian Devotion',
+  'Morning Prayer',
+  'Daily Devotion',
+  'Christian Devotional',
+  'Tamil Christian',
+  'Tamil Praise'
+];
+
+export const CORE_HASHTAG_SUITE = [
+  '#India',
+  '#MorningDevotion',
+  '#ChristianDevotion',
+  '#Praise',
+  '#Praises',
+  '#TamilChristian',
+  '#1000Praises',
+  '#Shorts'
+];
+
 const TARGET_ALGORITHM_TAGS = [
   'ChristianAffirmations',
   'BibleVerseShorts',
@@ -52,9 +78,13 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
   const line2Scripture = (normLine1 === normLine2 || isDuplicateVerse) ? '' : rawLine2;
   const line3Ref = cleanScriptureRef(raw.subtitles?.line3Ref || ref);
 
-  // Combine existing tags with target audience algorithm tags
+  // Combine core devotional tags with target algorithm tags and existing blueprint tags
   const existingTags = (raw.seo?.tags || []).map(t => t.replace(/^#/, '').trim());
-  const mergedTags = Array.from(new Set([...existingTags, ...TARGET_ALGORITHM_TAGS]));
+  const mergedTags = Array.from(new Set([...CORE_DEVOTIONAL_TAGS, ...TARGET_ALGORITHM_TAGS, ...existingTags]));
+
+  // Combine core hashtag suite with existing hashtags
+  const existingHashtags = (raw.seo?.hashtags || []).map(h => (h.startsWith('#') ? h : `#${h}`).trim());
+  const mergedHashtags = Array.from(new Set([...CORE_HASHTAG_SUITE, ...existingHashtags]));
 
   // Character-matched voice profile tailored to the specific character
   const characterMatchingVoice = raw.voiceProfile || voiceDir.voiceProfileDirective;
@@ -89,7 +119,8 @@ function enrichBlueprintWithExpressions(raw: ShortsBlueprint): ShortsBlueprint {
       ...raw.seo,
       title: raw.seo?.title || `Short #${raw.id} | ${title} | ${ref} | Christian Affirmations`,
       description: getFormattedYouTubeDescription({ scriptureVerse: verse, scriptureRef: ref, affirmationText: text }),
-      tags: mergedTags
+      tags: mergedTags,
+      hashtags: mergedHashtags
     }
   };
 

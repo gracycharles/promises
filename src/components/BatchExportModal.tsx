@@ -128,6 +128,13 @@ ${formatYouTubeOnlyText(b)}`;
     setTimeout(() => setCopiedType(null), 2000);
   };
 
+  const handleCopyCoreTagsCsv = () => {
+    const coreTags = 'India, morning devotion, Christian devotion, praise, praises, Morning Devotion, Christian Devotion, Morning Prayer, Daily Devotion, Christian Devotional, Tamil Christian, Tamil Praise';
+    navigator.clipboard.writeText(coreTags);
+    setCopiedType('core-tags');
+    setTimeout(() => setCopiedType(null), 2000);
+  };
+
   const handleCopyAllTagsCsv = () => {
     const allTags = Array.from(new Set(filteredBlueprints.flatMap(b => b.seo.tags)));
     navigator.clipboard.writeText(allTags.join(', '));
@@ -347,6 +354,24 @@ ${formatYouTubeOnlyText(b)}`;
                 <>
                   <Copy className="w-3.5 h-3.5 text-amber-400" />
                   <span>Copy Descriptions</span>
+                </>
+              )}
+            </button>
+
+            <button
+              onClick={handleCopyCoreTagsCsv}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-950/40 hover:bg-amber-900/50 text-amber-300 text-xs font-semibold border border-amber-500/30 transition-all shadow"
+              title="Copy Core Devotional Tags Suite (India, morning devotion, Christian devotion, praises, etc.)"
+            >
+              {copiedType === 'core-tags' ? (
+                <>
+                  <Check className="w-3.5 h-3.5 text-emerald-400" />
+                  <span className="text-emerald-400">Copied Core Tags!</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Core Devotional Tags</span>
                 </>
               )}
             </button>

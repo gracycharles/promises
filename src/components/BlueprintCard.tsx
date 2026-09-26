@@ -998,11 +998,82 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                 </div>
               </div>
               
-              {/* Tags with Comma Separated Copy */}
+              {/* Core Devotional Tags (India, Devotion, Praises, Tamil Christian) */}
+              <div className="p-3 rounded-lg bg-amber-950/20 border border-amber-500/30 space-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-amber-300 font-mono text-[10px] uppercase font-bold tracking-wider flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                    Core Devotional Tags (India, Daily Devotion & Praises):
+                  </span>
+                  <button
+                    onClick={() => copyToClipboard('India, morning devotion, Christian devotion, praise, praises, Morning Devotion, Christian Devotion, Morning Prayer, Daily Devotion, Christian Devotional, Tamil Christian, Tamil Praise', 'core-tags-csv')}
+                    className="text-[11px] font-semibold text-amber-300 hover:text-amber-200 bg-amber-500/20 hover:bg-amber-500/30 px-2.5 py-1 rounded border border-amber-500/40 flex items-center gap-1 transition-all"
+                    title="Copy Core Devotional Tags Suite"
+                  >
+                    {copiedSection === 'core-tags-csv' ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-400" />
+                        <span className="text-emerald-400 font-bold">Copied Core Tags!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy Core Devotional Tags</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {['India', 'morning devotion', 'Christian devotion', 'praise', 'praises', 'Morning Devotion', 'Christian Devotion', 'Morning Prayer', 'Daily Devotion', 'Christian Devotional', 'Tamil Christian', 'Tamil Praise'].map((ct, idx) => (
+                    <span key={idx} className="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-500/30 text-amber-200 font-mono text-[10.5px]">
+                      {ct}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Hashtags Suite (#India, #MorningDevotion, #ChristianDevotion, #Praise, #Praises, #TamilChristian, #1000Praises, #Shorts) */}
+              <div className="p-3 rounded-lg bg-purple-950/20 border border-purple-500/30 space-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-purple-300 font-mono text-[10px] uppercase font-bold tracking-wider flex items-center gap-1.5">
+                    <Hash className="w-3.5 h-3.5 text-purple-400" />
+                    Hashtag Suite (YouTube Shorts & Socials):
+                  </span>
+                  <button
+                    onClick={() => copyToClipboard(blueprint.seo.hashtags.join(', '), 'hashtags-csv')}
+                    className="text-[11px] font-semibold text-purple-300 hover:text-purple-200 bg-purple-500/20 hover:bg-purple-500/30 px-2.5 py-1 rounded border border-purple-500/40 flex items-center gap-1 transition-all"
+                    title="Copy hashtag suite as comma-separated values ready for YouTube Studio"
+                  >
+                    {copiedSection === 'hashtags-csv' ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-400" />
+                        <span className="text-emerald-400 font-bold">Copied Hashtags (CSV)!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy Hashtag Suite</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <div className="p-2 rounded bg-black/60 font-mono text-[11px] text-purple-300 select-all border border-purple-500/20">
+                  {blueprint.seo.hashtags.join(', ')}
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-0.5">
+                  {blueprint.seo.hashtags.map((ht, idx) => (
+                    <span key={idx} className="px-2 py-0.5 rounded bg-purple-900/40 border border-purple-500/30 text-purple-200 font-mono text-[10.5px]">
+                      {ht}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* All Tags with Comma Separated Copy */}
               <div className="p-3 rounded-lg bg-stone-900/60 border border-stone-800/80 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-stone-400 font-mono text-[10px] uppercase font-bold tracking-wider">
-                    Tags (Comma-Separated for YouTube Studio):
+                    Full Tags CSV (All Devotional & Algorithm Keywords):
                   </span>
                   <button
                     onClick={() => copyToClipboard(blueprint.seo.tags.join(', '), 'tags-csv')}
@@ -1017,42 +1088,13 @@ const BlueprintCardComponent: React.FC<BlueprintCardProps> = ({
                     ) : (
                       <>
                         <Copy className="w-3 h-3" />
-                        <span>Copy Tags (CSV)</span>
+                        <span>Copy Full Tags (CSV)</span>
                       </>
                     )}
                   </button>
                 </div>
                 <div className="p-2 rounded bg-black/60 font-mono text-[11px] text-amber-300 select-all border border-stone-800/60">
                   {blueprint.seo.tags.join(', ')}
-                </div>
-              </div>
-
-              {/* Hashtags with Comma Separated Copy */}
-              <div className="p-3 rounded-lg bg-stone-900/60 border border-stone-800/80 space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="text-stone-400 font-mono text-[10px] uppercase font-bold tracking-wider">
-                    Hashtags (Comma-Separated for YouTube Studio):
-                  </span>
-                  <button
-                    onClick={() => copyToClipboard(blueprint.seo.hashtags.join(', '), 'hashtags-csv')}
-                    className="text-[11px] font-medium text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors"
-                    title="Copy hashtags as comma-separated values ready for YouTube Studio"
-                  >
-                    {copiedSection === 'hashtags-csv' ? (
-                      <>
-                        <Check className="w-3 h-3 text-emerald-400" />
-                        <span className="text-emerald-400 font-bold">Copied Hashtags (CSV)</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-3 h-3" />
-                        <span>Copy Hashtags (CSV)</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-                <div className="p-2 rounded bg-black/60 font-mono text-[11px] text-purple-300 select-all border border-stone-800/60">
-                  {blueprint.seo.hashtags.join(', ')}
                 </div>
               </div>
             </div>

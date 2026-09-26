@@ -136,7 +136,7 @@ export function formatYouTubeOnlyText(b: ShortsBlueprint): string {
 - Title: ${b.seo.title}
 - Description: ${b.seo.description}
 - Tags (CSV): ${b.seo.tags.join(', ')}
-- Hashtags (CSV): ${b.seo.hashtags.join(', ')}`;
+- Hashtag Suite (CSV): ${b.seo.hashtags.join(', ')}`;
 }
 
 /**
@@ -257,9 +257,38 @@ export function generateDynamicBlueprint(item: PraiseItem): ShortsBlueprint {
     },
     seo: {
       title: `Short #${item.id} | ${cleanTitle} | Christian Affirmations`,
-      description: `Daily Christian Affirmation #${item.id}: '${cleanTitle}' (${engRef}). Hope-filled, positive animation for kids to elderly. #ChristianAffirmations #DailyHope #BibleVerse`,
-      tags: ["Christian Affirmations", "Bible Verse Shorts", "Daily Hope", "Kids to Elderly", "3D Animation"],
-      hashtags: ["#ChristianAffirmations", "#BibleVerse", "#Shorts", "#DailyHope", "#Animation"]
+      description: `Daily Christian Affirmation #${item.id}: '${cleanTitle}' (${engRef}). Hope-filled, positive animation for kids to elderly. #India #MorningDevotion #ChristianDevotion #Praise #Praises #TamilChristian #1000Praises #Shorts`,
+      tags: [
+        "India",
+        "morning devotion",
+        "Christian devotion",
+        "praise",
+        "praises",
+        "Morning Devotion",
+        "Christian Devotion",
+        "Morning Prayer",
+        "Daily Devotion",
+        "Christian Devotional",
+        "Tamil Christian",
+        "Tamil Praise",
+        "Christian Affirmations",
+        "Bible Verse Shorts",
+        "Daily Hope",
+        "Kids to Elderly",
+        "3D Animation"
+      ],
+      hashtags: [
+        "#India",
+        "#MorningDevotion",
+        "#ChristianDevotion",
+        "#Praise",
+        "#Praises",
+        "#TamilChristian",
+        "#1000Praises",
+        "#Shorts",
+        "#DailyHope",
+        "#BibleVerse"
+      ]
     }
   };
 }

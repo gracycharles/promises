@@ -25,7 +25,34 @@ Delivering short, effective, joyful, and Bible-based Christian affirmations that
 
 Subscribe and fill your daily feed with hope, laughter, and God's living promises! 🙏✨`;
 
+export const CORE_DEVOTIONAL_TAGS = [
+  "India",
+  "morning devotion",
+  "Christian devotion",
+  "praise",
+  "praises",
+  "Morning Devotion",
+  "Christian Devotion",
+  "Morning Prayer",
+  "Daily Devotion",
+  "Christian Devotional",
+  "Tamil Christian",
+  "Tamil Praise"
+];
+
+export const CORE_HASHTAG_SUITE = [
+  "#India",
+  "#MorningDevotion",
+  "#ChristianDevotion",
+  "#Praise",
+  "#Praises",
+  "#TamilChristian",
+  "#1000Praises",
+  "#Shorts"
+];
+
 export const CHANNEL_TAGS = [
+  ...CORE_DEVOTIONAL_TAGS,
   "Christian Affirmations",
   "Bible Verse Shorts",
   "Daily Christian Affirmations",
@@ -179,11 +206,77 @@ export const ChannelProfileModal: React.FC<ChannelProfileModalProps> = ({ isOpen
             </div>
           </div>
 
+          {/* Core Devotional Tags Suite */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                Core Devotional Tags (India, Daily Devotion & Praises)
+              </span>
+              <button
+                onClick={() => copyText(CORE_DEVOTIONAL_TAGS.join(', '), 'core-tags')}
+                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 text-xs font-semibold transition-colors"
+              >
+                {copiedSection === 'core-tags' ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    <span className="text-emerald-400">Copied Core Tags!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>Copy Core Tags (CSV)</span>
+                  </>
+                )}
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-1.5 bg-stone-950 p-3 rounded-xl border border-stone-800">
+              {CORE_DEVOTIONAL_TAGS.map((tag) => (
+                <span key={tag} className="px-2.5 py-1 rounded-md bg-amber-950/60 border border-amber-500/30 text-amber-200 font-mono text-xs">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Official Hashtag Suite */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-purple-400 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-purple-400" />
+                Official YouTube Shorts Hashtag Suite
+              </span>
+              <button
+                onClick={() => copyText(CORE_HASHTAG_SUITE.join(', '), 'hashtags')}
+                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/40 text-purple-300 text-xs font-semibold transition-colors"
+              >
+                {copiedSection === 'hashtags' ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    <span className="text-emerald-400">Copied Hashtags!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>Copy Hashtags (CSV)</span>
+                  </>
+                )}
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-1.5 bg-stone-950 p-3 rounded-xl border border-stone-800">
+              {CORE_HASHTAG_SUITE.map((ht) => (
+                <span key={ht} className="px-2.5 py-1 rounded-md bg-purple-900/40 border border-purple-500/30 text-purple-200 font-mono text-xs">
+                  {ht}
+                </span>
+              ))}
+            </div>
+          </div>
+
           {/* Recommended Channel Tags */}
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider text-stone-400">
-                Recommended Channel Keywords & Tags
+                Full Channel Keywords & Tags (Master List)
               </span>
               <button
                 onClick={() => copyText(CHANNEL_TAGS.join(', '), 'tags')}
@@ -192,7 +285,7 @@ export const ChannelProfileModal: React.FC<ChannelProfileModalProps> = ({ isOpen
                 {copiedSection === 'tags' ? (
                   <>
                     <Check className="w-3.5 h-3.5 text-emerald-400" />
-                    <span className="text-emerald-400">Copied Tags!</span>
+                    <span className="text-emerald-400">Copied All Tags!</span>
                   </>
                 ) : (
                   <>
@@ -202,7 +295,7 @@ export const ChannelProfileModal: React.FC<ChannelProfileModalProps> = ({ isOpen
                 )}
               </button>
             </div>
-            <div className="flex flex-wrap gap-1.5 bg-stone-950 p-3 rounded-xl border border-stone-800">
+            <div className="flex flex-wrap gap-1.5 bg-stone-950 p-3 rounded-xl border border-stone-800 max-h-40 overflow-y-auto">
               {CHANNEL_TAGS.map((tag) => (
                 <span key={tag} className="px-2.5 py-1 rounded-md bg-stone-900 border border-stone-800 text-stone-300 font-mono text-xs">
                   {tag}
